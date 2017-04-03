@@ -52,9 +52,22 @@ public class ProductSubCategoryServiceImpl implements ProductSubCategoryService 
 	}
 
 	@Override
-	public ProductSubCategory getProductSubCategoryByNameLikeService(String containing_name) {
+	public List<ProductSubCategory> getProductSubCategoryByNameLikeService(String containing_name) {
 		
-		return productSubCategoryRepository.findByNameLikeOrderByNameAsc(containing_name);
+		List<ProductSubCategory> productSubCategories = new ArrayList<>();
+			
+			productSubCategoryRepository.findByNameLikeOrderByNameAsc("%" + containing_name + "%").forEach(productSubCategories::add);;
+			return productSubCategories;
+			
 	}
+
+	
+
+	
+
+	
+
+	
+	
 
 }

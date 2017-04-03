@@ -28,9 +28,12 @@ public class ProductCategory {
 	private String name;
 
 	@Column(name = "last_modofied_date", nullable = false)
-	@DateTimeFormat(pattern = "dd/MM/yyyy")
-	@Temporal(TemporalType.DATE)
+	@DateTimeFormat(pattern = "dd/MM/yyyy HH:mm:ss")
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date lastModifiedDate;
+	
+	
+	
 
 	public int getId() {
 		return id;

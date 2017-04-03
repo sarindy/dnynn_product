@@ -12,7 +12,7 @@ public interface ProductSubCategoryService {
 	public List<ProductSubCategory> getAllProductSubCategoryService();
 	public ProductSubCategory getProductSubCategoryService(int id);
 	public ProductSubCategory getProductSubCategoryByNameService(String name);
-	public ProductSubCategory getProductSubCategoryByNameLikeService(String containing_name);
+	public List<ProductSubCategory> getProductSubCategoryByNameLikeService(String containing_name);
 	
 	
 	

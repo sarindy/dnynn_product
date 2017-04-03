@@ -29,8 +29,8 @@ public class ProductSubCategory {
 	private String name;
 	
 	@Column(name="last_modified_date")
-	@DateTimeFormat(pattern="dd/MM/yyyy")
-	@Temporal(TemporalType.DATE)
+	@DateTimeFormat(pattern="dd/MM/yyyy HH:mm:ss")
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date lastModifiedDate;
 	
 	@ManyToOne

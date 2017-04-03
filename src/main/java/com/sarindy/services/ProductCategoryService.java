@@ -17,5 +17,8 @@ public interface ProductCategoryService {
 	public void deleteProductCategoryService(ProductCategory productCategory);
 
 	public ProductCategory getProductCategoryByNameService(String name);
+	
+	
+	
 
 }

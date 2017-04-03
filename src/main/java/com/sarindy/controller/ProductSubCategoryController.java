@@ -60,17 +60,17 @@ public class ProductSubCategoryController {
 				HttpStatus.OK);
 	}
 
-	@RequestMapping(value = "/getProductSubCategoryByNameJson/{name}", method = RequestMethod.GET, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	@RequestMapping(value = "/getProductSubCategoryByNameJson/{name}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public ResponseEntity<ProductSubCategory> getProductSubCategoryByName(@PathVariable String name) {
 
 		return new ResponseEntity<ProductSubCategory>(
 				productSubCategoryServiceImpl.getProductSubCategoryByNameService(name), HttpStatus.OK);
 	}
 
-	@RequestMapping(value = "/getProductSubCategoryByNameLikeJson/{name}", method = RequestMethod.GET, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-	public ResponseEntity<ProductSubCategory> getProductSubCategoryByNameLike(@PathVariable String name) {
+	@RequestMapping(value = "/getProductSubCategoryByNameLikeJson/{name}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public ResponseEntity<List<ProductSubCategory>> getProductSubCategoryByNameLike(@PathVariable String name) {
 
-		return new ResponseEntity<ProductSubCategory>(
+		return new ResponseEntity<List<ProductSubCategory>>(
 				productSubCategoryServiceImpl.getProductSubCategoryByNameLikeService(name), HttpStatus.OK);
 	}
 
