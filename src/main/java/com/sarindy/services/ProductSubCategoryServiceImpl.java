@@ -56,8 +56,9 @@ public class ProductSubCategoryServiceImpl implements ProductSubCategoryService 
 
 		List<ProductSubCategory> productSubCategories = new ArrayList<>();
 
-		productSubCategoryRepository.findByNameLikeOrderByNameAsc("%" + containing_name + "%").forEach(productSubCategories::add);
-		;
+		productSubCategoryRepository.findByNameLikeOrderByNameAsc("%" + containing_name + "%")
+				.forEach(productSubCategories::add);
+		
 		return productSubCategories;
 
 	}
