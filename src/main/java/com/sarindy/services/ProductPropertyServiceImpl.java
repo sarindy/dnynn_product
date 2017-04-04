@@ -1,12 +1,15 @@
 package com.sarindy.services;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.sarindy.model.ProductProperty;
 
+@Service
 public class ProductPropertyServiceImpl implements ProductPropertyService {
 
 	@Autowired
@@ -14,6 +17,7 @@ public class ProductPropertyServiceImpl implements ProductPropertyService {
 
 	@Override
 	public void addProductPropertyService(ProductProperty productProperty) {
+		productProperty.setLastModifiedDate(new Date());
 		productPropertyRepository.save(productProperty);
 
 	}
