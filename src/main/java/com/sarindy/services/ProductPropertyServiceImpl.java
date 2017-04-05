@@ -30,6 +30,7 @@ public class ProductPropertyServiceImpl implements ProductPropertyService {
 
 	@Override
 	public void updateProductPropertyService(ProductProperty productProperty) {
+		productProperty.setLastModifiedDate(new Date());
 		productPropertyRepository.save(productProperty);
 	}
 
