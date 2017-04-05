@@ -1,8 +1,6 @@
-package com.sarindy.services;
+package com.sarindy.productCategory;
 
 import java.util.List;
-
-import com.sarindy.model.ProductCategory;
 
 public interface ProductCategoryService {
 	

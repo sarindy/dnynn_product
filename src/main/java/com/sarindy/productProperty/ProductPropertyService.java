@@ -1,8 +1,6 @@
-package com.sarindy.services;
+package com.sarindy.productProperty;
 
 import java.util.List;
-
-import com.sarindy.model.ProductProperty;
 
 public interface ProductPropertyService {
 	

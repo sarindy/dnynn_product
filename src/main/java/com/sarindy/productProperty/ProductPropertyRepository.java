@@ -1,10 +1,8 @@
-package com.sarindy.services;
+package com.sarindy.productProperty;
 
 import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
-
-import com.sarindy.model.ProductProperty;
 
 public interface ProductPropertyRepository extends CrudRepository<ProductProperty, Integer> {
 	

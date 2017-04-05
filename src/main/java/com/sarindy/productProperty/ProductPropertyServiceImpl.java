@@ -1,4 +1,4 @@
-package com.sarindy.services;
+package com.sarindy.productProperty;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -6,8 +6,6 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.sarindy.model.ProductProperty;
 
 @Service
 public class ProductPropertyServiceImpl implements ProductPropertyService {

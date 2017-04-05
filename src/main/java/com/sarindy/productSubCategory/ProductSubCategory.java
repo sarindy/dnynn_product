@@ -1,4 +1,4 @@
-package com.sarindy.model;
+package com.sarindy.productSubCategory;
 
 import java.util.Date;
 
@@ -15,6 +15,8 @@ import javax.persistence.TemporalType;
 import javax.persistence.UniqueConstraint;
 
 import org.springframework.format.annotation.DateTimeFormat;
+
+import com.sarindy.productCategory.ProductCategory;
 
 @Entity
 @Table(name="product_sub_category",uniqueConstraints=@UniqueConstraint(columnNames={"name"}))

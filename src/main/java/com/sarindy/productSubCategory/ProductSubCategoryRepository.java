@@ -1,10 +1,8 @@
-package com.sarindy.services;
+package com.sarindy.productSubCategory;
 
 import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
-
-import com.sarindy.model.ProductSubCategory;
 
 public interface ProductSubCategoryRepository extends CrudRepository<ProductSubCategory, Integer> {
 	public ProductSubCategory findByNameOrderByNameAsc(String name);

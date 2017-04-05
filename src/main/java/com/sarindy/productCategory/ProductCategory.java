@@ -1,4 +1,4 @@
-package com.sarindy.model;
+package com.sarindy.productCategory;
 
 import java.util.Date;
 
