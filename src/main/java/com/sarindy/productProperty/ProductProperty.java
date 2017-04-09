@@ -7,16 +7,12 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.UniqueConstraint;
 
 import org.springframework.format.annotation.DateTimeFormat;
-
-import com.sarindy.productSubCategory.ProductSubCategory;
 
 @Entity
 @Table(name = "product_property", uniqueConstraints = @UniqueConstraint(columnNames = { "name" }))
@@ -33,18 +29,6 @@ public class ProductProperty {
 	@DateTimeFormat(pattern = "dd/MM/yyyy HH:mm:ss")
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date lastModifiedDate;
-	
-	@ManyToOne
-	@JoinColumn(name="product_sub_category_id")
-	private ProductSubCategory productSubCategory;
-
-	public ProductSubCategory getProductSubCategory() {
-		return productSubCategory;
-	}
-
-	public void setProductSubCategory(ProductSubCategory productSubCategory) {
-		this.productSubCategory = productSubCategory;
-	}
 
 	public int getId() {
 		return id;

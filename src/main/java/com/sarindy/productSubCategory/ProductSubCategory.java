@@ -7,8 +7,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -16,28 +14,33 @@ import javax.persistence.UniqueConstraint;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
-import com.sarindy.productCategory.ProductCategory;
-
 @Entity
-@Table(name="product_sub_category",uniqueConstraints=@UniqueConstraint(columnNames={"name"}))
+@Table(name = "product_sub_category", uniqueConstraints = @UniqueConstraint(columnNames = { "name" }))
 public class ProductSubCategory {
-	
+
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name="id")
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "id")
 	private int id;
-	
-	@Column(name="name")
+
+	@Column(name = "name")
 	private String name;
-	
-	@Column(name="last_modified_date")
-	@DateTimeFormat(pattern="dd/MM/yyyy HH:mm:ss")
+
+	@Column(name = "last_modified_date")
+	@DateTimeFormat(pattern = "dd/MM/yyyy HH:mm:ss")
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date lastModifiedDate;
-	
-	@ManyToOne
-	@JoinColumn(name="product_category_id")
-	private ProductCategory productCategory;
+
+	@Column(name = "product_category_id")
+	private int productCategoryId;
+
+	public int getProductCategoryId() {
+		return productCategoryId;
+	}
+
+	public void setProductCategoryId(int productCategoryId) {
+		this.productCategoryId = productCategoryId;
+	}
 
 	public int getId() {
 		return id;
@@ -63,27 +66,13 @@ public class ProductSubCategory {
 		this.lastModifiedDate = lastModifiedDate;
 	}
 
-	public ProductCategory getProductCategory() {
-		return productCategory;
-	}
-
-	public void setProductCategory(ProductCategory productCategory) {
-		this.productCategory = productCategory;
-	}
-
 	public ProductSubCategory() {
 	}
 
-	public ProductSubCategory(String name, Date lastModifiedDate, ProductCategory productCategory) {
-		
-		this.name = name;
-		this.lastModifiedDate = lastModifiedDate;
-		this.productCategory = productCategory;
+	@Override
+	public String toString() {
+		return "ProductSubCategory [id=" + id + ", name=" + name + ", lastModifiedDate=" + lastModifiedDate + ", productCategoryId="
+				+ productCategoryId + "]";
 	}
-	
-	
-	
-	
-	
 
 }

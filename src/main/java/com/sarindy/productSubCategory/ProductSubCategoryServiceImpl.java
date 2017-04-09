@@ -7,29 +7,46 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.sarindy.productCategory.ProductCategoryRepository;
+
 @Service
 public class ProductSubCategoryServiceImpl implements ProductSubCategoryService {
 
 	@Autowired
 	private ProductSubCategoryRepository productSubCategoryRepository;
 
+	@Autowired
+	private ProductCategoryRepository productCategoryRepoi;
+
 	@Override
-	public void addProductSubCategoryService(ProductSubCategory productSubCategory) {
+	public boolean addProductSubCategoryService(ProductSubCategory productSubCategory) {
 		productSubCategory.setLastModifiedDate(new Date());
-		productSubCategoryRepository.save(productSubCategory);
+
+		// Check Category Id
+		if (productCategoryRepoi.findOne(productSubCategory.getProductCategoryId()) != null) {
+			productSubCategoryRepository.save(productSubCategory);
+			return true;
+		}
+
+		return false;
 
 	}
 
 	@Override
-	public void deleteProductSubCategoryService(ProductSubCategory productSubCategory) {
+	public boolean deleteProductSubCategoryService(ProductSubCategory productSubCategory) {
 		productSubCategoryRepository.delete(productSubCategory);
+		return true;
 
 	}
 
 	@Override
-	public void updateProductSubCategoryService(ProductSubCategory productSubCategory) {
+	public boolean updateProductSubCategoryService(ProductSubCategory productSubCategory) {
 		productSubCategory.setLastModifiedDate(new Date());
 		productSubCategoryRepository.save(productSubCategory);
+		return true;
+		
+		//TODO Test Update one with Create New Object and another one based on the inquiry object
+
 	}
 
 	@Override
@@ -54,9 +71,8 @@ public class ProductSubCategoryServiceImpl implements ProductSubCategoryService 
 
 		List<ProductSubCategory> productSubCategories = new ArrayList<>();
 
-		productSubCategoryRepository.findByNameLikeOrderByNameAsc("%" + containing_name + "%")
-				.forEach(productSubCategories::add);
-		
+		productSubCategoryRepository.findByNameLikeOrderByNameAsc("%" + containing_name + "%").forEach(productSubCategories::add);
+
 		return productSubCategories;
 
 	}

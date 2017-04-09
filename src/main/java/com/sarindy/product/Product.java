@@ -7,15 +7,11 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 import org.springframework.format.annotation.DateTimeFormat;
-
-import com.sarindy.productSubCategory.ProductSubCategory;
 
 @Entity
 @Table(name = "product")
@@ -37,9 +33,8 @@ public class Product {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date lastModifiedDate;
 
-	@ManyToOne
-	@JoinColumn(name = "product_sub_category_id")
-	private ProductSubCategory productSubCategory;
+	@Column(name = "sub_product_category_id")
+	private int subProductCategoryId;
 
 	public long getId() {
 		return id;
@@ -73,16 +68,27 @@ public class Product {
 		this.lastModifiedDate = lastModifiedDate;
 	}
 
-	public ProductSubCategory getProductSubCategory() {
-		return productSubCategory;
-	}
-
-	public void setProductSubCategory(ProductSubCategory productSubCategory) {
-		this.productSubCategory = productSubCategory;
-	}
-
 	public Product() {
-		
+
+	}
+
+	public Product(String name, String description, Date lastModifiedDate) {
+		this.name = name;
+		this.description = description;
+		this.lastModifiedDate = lastModifiedDate;
+	}
+
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", name=" + name + ", description=" + description + ", lastModifiedDate=" + lastModifiedDate + "]";
+	}
+
+	public int getSubProductCategoryId() {
+		return subProductCategoryId;
+	}
+
+	public void setSubProductCategoryId(int subProductCategoryId) {
+		this.subProductCategoryId = subProductCategoryId;
 	}
 	
 	

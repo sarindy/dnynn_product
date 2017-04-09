@@ -7,15 +7,11 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 import org.springframework.format.annotation.DateTimeFormat;
-
-import com.sarindy.productProperty.ProductProperty;
 
 @Entity
 @Table(name = "product_property_detail")
@@ -33,10 +29,6 @@ public class ProductPropertyDetail {
 	@DateTimeFormat(pattern = "dd/MM/yyyy HH:mm:ss")
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date lastModifiedDate;
-
-	@ManyToOne
-	@JoinColumn(name = "product_property_id")
-	private ProductProperty productProperty;
 
 	public int getId() {
 		return id;
@@ -60,14 +52,6 @@ public class ProductPropertyDetail {
 
 	public void setLastModifiedDate(Date lastModifiedDate) {
 		this.lastModifiedDate = lastModifiedDate;
-	}
-
-	public ProductProperty getProductProperty() {
-		return productProperty;
-	}
-
-	public void setProductProperty(ProductProperty productProperty) {
-		this.productProperty = productProperty;
 	}
 
 	public ProductPropertyDetail() {

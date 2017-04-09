@@ -32,8 +32,16 @@ public class ProductCategory {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date lastModifiedDate;
 	
-	
-	
+	@Column(name="deleted")
+	private String deleted="N";
+
+	public String getDeleted() {
+		return deleted;
+	}
+
+	public void setDeleted(String deleted) {
+		this.deleted = deleted;
+	}
 
 	public int getId() {
 		return id;
@@ -67,6 +75,17 @@ public class ProductCategory {
 
 	public ProductCategory() {
 
+	}
+	
+	
+
+	public ProductCategory(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "ProductCategory [id=" + id + ", name=" + name + ", lastModifiedDate=" + lastModifiedDate + "]";
 	}
 
 }

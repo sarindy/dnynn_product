@@ -8,15 +8,25 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ProductCategoryImpl implements ProductCategoryService {
+public class ProductCategoryServiceImpl implements ProductCategoryService {
 
 	@Autowired
 	private ProductCategoryRepository productCategoryRepository;
 
 	@Override
-	public void addProductCategoryService(ProductCategory productCategory) {
-		productCategory.setLastModifiedDate(new Date());
-		productCategoryRepository.save(productCategory);
+	public boolean addProductCategoryService(ProductCategory productCategory) {
+		try {
+			productCategory.setLastModifiedDate(new Date());
+			if (productCategoryRepository.findByName(productCategory.getName()) == null) {
+				productCategoryRepository.save(productCategory);
+				return true;
+			}
+			return false;
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			return false;
+
+		}
 
 	}
 
@@ -33,23 +43,18 @@ public class ProductCategoryImpl implements ProductCategoryService {
 	}
 
 	@Override
-	public void updateProductCategoryService(ProductCategory productCategory) {
-		ProductCategory updated = new ProductCategory();
-		updated = productCategoryRepository.findOne(productCategory.getId());
-		if (updated != null) {
-			productCategoryRepository.delete(productCategory.getId());
-			productCategory.setLastModifiedDate(new Date());
-			productCategoryRepository.save(productCategory);
-		} else {
-			productCategory.setLastModifiedDate(new Date());
-			productCategoryRepository.save(productCategory);
-		}
+	public boolean updateProductCategoryService(ProductCategory productCategory) {
 
+		productCategoryRepository.save(productCategory);
+		return true;
 	}
 
 	@Override
-	public void deleteProductCategoryService(ProductCategory productCategory) {
-		productCategoryRepository.delete(productCategory);
+	public boolean deleteProductCategoryService(ProductCategory productCategory) {
+		productCategory.setDeleted("Y");
+		productCategory.setLastModifiedDate(new Date());
+		productCategoryRepository.save(productCategory);
+		return true;
 	}
 
 	@Override
