@@ -26,7 +26,9 @@ public class ProductApplication implements CommandLineRunner {
 		//testBean.deleteProductCategory("phone");
 		//testBean.addProductSubCategory("Mobile Phone Accessories");
 		//testBean.addProductSubCategory("Power Bank");
-		
+		//testBean.addCategory("Computer");
+		//testBean.updateProduct("Cosmeticss", "Cosmetic", 0);
+		testBean.deleteCategory("Cosmetic", 0);
 		
 
 	}

@@ -2,17 +2,19 @@ package com.sarindy.productCategory;
 
 import java.util.List;
 
+import com.sarindy.responseCode.ResponseCodeModel;
+
 public interface ProductCategoryService {
 	
-	public boolean addProductCategoryService(String productCategoryName);
+	public ResponseCodeModel addProductCategoryService(String productCategoryName, int modifiedBy);
 
-	public ProductCategory getProductCategoryService(int id);
+	public ProductCategory getProductCategoryService(String categoryName);
 
 	public List<ProductCategory> getAllProductCategoryService();
 
-	public boolean updateProductCategoryService(String productCategoryName);
+	public ResponseCodeModel updateProductCategoryService(String productCategoryName,String oldName, int modifiedBy);
 
-	public boolean deleteProductCategoryService(String productCategoryName);
+	public ResponseCodeModel deleteProductCategoryService(String productCategoryName,int modifiedBy);
 
 	public ProductCategory getProductCategoryByNameService(String productCategoryName);
 	
