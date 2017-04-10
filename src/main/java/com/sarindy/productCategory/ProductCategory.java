@@ -10,12 +10,13 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.UniqueConstraint;
 
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
-@Table(name = "product_category")
+@Table(name = "product_category", uniqueConstraints = @UniqueConstraint(columnNames = { "name" }))
 public class ProductCategory {
 
 	@Id

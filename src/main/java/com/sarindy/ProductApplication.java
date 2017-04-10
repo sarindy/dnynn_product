@@ -10,6 +10,8 @@ public class ProductApplication implements CommandLineRunner {
 
 	@Autowired
 	private TestBean testBean;
+	
+	
 
 	public static void main(String[] args) {
 		SpringApplication.run(ProductApplication.class, args);
@@ -18,8 +20,14 @@ public class ProductApplication implements CommandLineRunner {
 	@Override
 	public void run(String... arg0) throws Exception {
 		//testBean.addCategory("Phone");
+		//testBean.addCategory("Computer");
+		//testBean.addCategory("Cosmetic");
 		//testBean.updateProductCategory("new Phone", "phone");
-		testBean.deleteProductCategory("phone");
+		//testBean.deleteProductCategory("phone");
+		//testBean.addProductSubCategory("Mobile Phone Accessories");
+		//testBean.addProductSubCategory("Power Bank");
+		
+		
 
 	}
 }

@@ -20,14 +20,14 @@ public class ProductSubCategoryController {
 
 	// Json Section----------------------------------------------------
 
-	@RequestMapping(value = "/addProductSubCategoryJSON", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	/*@RequestMapping(value = "/addProductSubCategoryJSON", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public ResponseEntity<ProductSubCategory> addProductSubCategory(
 			@RequestBody ProductSubCategory productSubCategory) {
 
 		productSubCategoryServiceImpl.addProductSubCategoryService(productSubCategory);
 		return new ResponseEntity<ProductSubCategory>(productSubCategory, HttpStatus.OK);
 
-	}
+	}*/
 
 	@RequestMapping(value = "/deleteProductSubCategoryJson", method = RequestMethod.DELETE, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public ResponseEntity<ProductSubCategory> deleteProductSubCategory(

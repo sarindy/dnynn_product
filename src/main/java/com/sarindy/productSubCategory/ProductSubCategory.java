@@ -34,43 +34,70 @@ public class ProductSubCategory {
 	@Column(name = "product_category_id")
 	private int productCategoryId;
 
+	@Column(name = "deleted")
+	private String deleted = "N";
+
+	public String getDeleted() {
+
+		return deleted;
+	}
+
+	public void setDeleted(String deleted) {
+
+		this.deleted = deleted;
+	}
+
 	public int getProductCategoryId() {
+
 		return productCategoryId;
 	}
 
 	public void setProductCategoryId(int productCategoryId) {
+
 		this.productCategoryId = productCategoryId;
 	}
 
 	public int getId() {
+
 		return id;
 	}
 
 	public void setId(int id) {
+
 		this.id = id;
 	}
 
 	public String getName() {
+
 		return name;
 	}
 
 	public void setName(String name) {
+
 		this.name = name;
 	}
 
 	public Date getLastModifiedDate() {
+
 		return lastModifiedDate;
 	}
 
 	public void setLastModifiedDate(Date lastModifiedDate) {
+
 		this.lastModifiedDate = lastModifiedDate;
 	}
 
 	public ProductSubCategory() {
 	}
 
+	public ProductSubCategory(String name) {
+
+		this.name = name;
+	}
+
 	@Override
 	public String toString() {
+
 		return "ProductSubCategory [id=" + id + ", name=" + name + ", lastModifiedDate=" + lastModifiedDate + ", productCategoryId="
 				+ productCategoryId + "]";
 	}

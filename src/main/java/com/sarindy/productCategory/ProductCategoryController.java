@@ -44,13 +44,13 @@ public class ProductCategoryController {
 
 	}*/
 
-	@RequestMapping(value = "/addProductCategoryJSON", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	/*@RequestMapping(value = "/addProductCategoryJSON", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public ResponseEntity<ProductCategory> addProductCategory(@RequestBody ProductCategory productCategory) {
 		
 		productCategoryService.addProductCategoryService(productCategory);
 		return new ResponseEntity<ProductCategory>(productCategory, HttpStatus.OK);
 
-	}
+	}*/
 	
 	
 
