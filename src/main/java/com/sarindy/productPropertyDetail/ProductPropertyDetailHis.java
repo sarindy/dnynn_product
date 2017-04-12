@@ -10,20 +10,22 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.persistence.UniqueConstraint;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Component;
 
 @Entity
-@Table(name = "product_property_detail", uniqueConstraints = @UniqueConstraint(columnNames = { "name" }))
+@Table(name = "product_property_detail_his")
 @Component
-public class ProductPropertyDetail {
+public class ProductPropertyDetailHis {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "id")
 	private int id;
+
+	@Column(name = "product_property_detail_his_id")
+	private int productPropertyDetailHisId;
 
 	@Column(name = "name")
 	private String name;
@@ -42,23 +44,8 @@ public class ProductPropertyDetail {
 	@Column(name = "deleted")
 	private int deleted = 0;
 
-	public ProductPropertyDetail() {
+	public ProductPropertyDetailHis() {
 
-	}
-
-	public ProductPropertyDetail(String name, int productPropertyId, int lastModifiedBy, int deleted) {
-
-		this.name = name;
-		this.productPropertyId = productPropertyId;
-		this.lastModifiedBy = lastModifiedBy;
-		this.deleted = deleted;
-	}
-
-	@Override
-	public String toString() {
-
-		return "ProductPropertyDetail [id=" + id + ", name=" + name + ", lastModifiedDate=" + lastModifiedDate + ", productPropertyId="
-				+ productPropertyId + ", lastModifiedBy=" + lastModifiedBy + ", deleted=" + deleted + "]";
 	}
 
 	public int getId() {
@@ -69,6 +56,16 @@ public class ProductPropertyDetail {
 	public void setId(int id) {
 
 		this.id = id;
+	}
+
+	public int getProductPropertyDetailHisId() {
+
+		return productPropertyDetailHisId;
+	}
+
+	public void setProductPropertyDetailHisId(int productPropertyDetailHisId) {
+
+		this.productPropertyDetailHisId = productPropertyDetailHisId;
 	}
 
 	public String getName() {
@@ -120,10 +117,9 @@ public class ProductPropertyDetail {
 
 		this.deleted = deleted;
 	}
-
-	public ProductPropertyDetail productPropertyDetail() {
-
-		return new ProductPropertyDetail();
+	
+	public ProductPropertyDetailHis productPropertyDetailHis(){
+		return new ProductPropertyDetailHis();
 	}
 
 }

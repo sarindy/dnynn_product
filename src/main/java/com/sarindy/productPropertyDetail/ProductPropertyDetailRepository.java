@@ -6,7 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface ProductPropertyDetailRepository extends CrudRepository<ProductPropertyDetail, Integer> {
 
-	public ProductPropertyDetail findByNameOrderByNameAsc(String name);
+	public ProductPropertyDetail findByName(String name);
 
 	public List<ProductPropertyDetail> findByNameLikeOrderByNameAsc(String name);
 
