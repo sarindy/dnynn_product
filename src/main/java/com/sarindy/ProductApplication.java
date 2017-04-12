@@ -19,7 +19,7 @@ public class ProductApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... arg0) throws Exception {
-		//testBean.addCategory("Phone");
+		//testBean.addCategory("Phone & Comunnication");
 		//testBean.addCategory("Computer");
 		//testBean.addCategory("Cosmetic");
 		//testBean.updateProductCategory("new Phone", "phone");
@@ -28,8 +28,9 @@ public class ProductApplication implements CommandLineRunner {
 		//testBean.addProductSubCategory("Power Bank");
 		//testBean.addCategory("Computer");
 		//testBean.updateProduct("Cosmeticss", "Cosmetic", 0);
-		testBean.deleteCategory("Cosmetic", 0);
-		
+		//testBean.deleteCategory("Cosmetic", 0);
+		//testBean.addSubCategory("Power Bank", 5, 0);
+		testBean.updateSubCategory("Power Banks", "Power Bank", 5, 0);
 
 	}
 }

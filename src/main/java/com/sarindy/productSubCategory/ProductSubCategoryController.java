@@ -7,7 +7,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -29,7 +28,7 @@ public class ProductSubCategoryController {
 
 	}*/
 
-	@RequestMapping(value = "/deleteProductSubCategoryJson", method = RequestMethod.DELETE, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	/*@RequestMapping(value = "/deleteProductSubCategoryJson", method = RequestMethod.DELETE, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public ResponseEntity<ProductSubCategory> deleteProductSubCategory(
 			@RequestBody ProductSubCategory productSubCategory) {
 		productSubCategoryServiceImpl.deleteProductSubCategoryService(productSubCategory);
@@ -42,7 +41,7 @@ public class ProductSubCategoryController {
 		productSubCategoryServiceImpl.updateProductSubCategoryService(productSubCategory);
 		return new ResponseEntity<ProductSubCategory>(productSubCategory, HttpStatus.OK);
 	}
-	
+*/	
 	@RequestMapping(value = "/getAllProductSubCategory", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public ResponseEntity<List<ProductSubCategory>> getAllProductSubCategory() {
 

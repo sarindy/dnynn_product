@@ -8,7 +8,7 @@ public interface ProductCategoryService {
 	
 	public ResponseCodeModel addProductCategoryService(String productCategoryName, int modifiedBy);
 
-	public ProductCategory getProductCategoryService(String categoryName);
+	public ProductCategory getProductCategoryService(int id);
 
 	public List<ProductCategory> getAllProductCategoryService();
 

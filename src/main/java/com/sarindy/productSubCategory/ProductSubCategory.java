@@ -13,17 +13,19 @@ import javax.persistence.TemporalType;
 import javax.persistence.UniqueConstraint;
 
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.stereotype.Component;
 
 @Entity
-@Table(name = "product_sub_category", uniqueConstraints = @UniqueConstraint(columnNames = { "name" }))
+@Table(name = "product_sub_category", uniqueConstraints = @UniqueConstraint(columnNames = { "product_sub_category_name" }))
+@Component
 public class ProductSubCategory {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "id")
+	@Column(name = "product_sub_category_id")
 	private int id;
 
-	@Column(name = "name")
+	@Column(name = "product_sub_category_name")
 	private String name;
 
 	@Column(name = "last_modified_date")
@@ -34,27 +36,27 @@ public class ProductSubCategory {
 	@Column(name = "product_category_id")
 	private int productCategoryId;
 
+	@Column(name = "modified_by")
+	private int modifiedBy;
+
 	@Column(name = "deleted")
-	private String deleted = "N";
+	private int deleted = 0;
 
-	public String getDeleted() {
+	public ProductSubCategory() {
 
-		return deleted;
 	}
 
-	public void setDeleted(String deleted) {
-
-		this.deleted = deleted;
-	}
-
-	public int getProductCategoryId() {
-
-		return productCategoryId;
-	}
-
-	public void setProductCategoryId(int productCategoryId) {
-
+	public ProductSubCategory(String productSubCatgoryName, int productCategoryId, int modifiedBy) {
+		this.name = productSubCatgoryName;
 		this.productCategoryId = productCategoryId;
+		this.modifiedBy = modifiedBy;
+	}
+
+	@Override
+	public String toString() {
+
+		return "ProductSubCategory [id=" + id + ", productSubCatgoryName=" + name + ", lastModifiedDate=" + lastModifiedDate
+				+ ", productCategoryId=" + productCategoryId + ", modifiedBy=" + modifiedBy + ", deleted=" + deleted + "]";
 	}
 
 	public int getId() {
@@ -67,14 +69,14 @@ public class ProductSubCategory {
 		this.id = id;
 	}
 
-	public String getName() {
+	public String getProductSubCatgoryName() {
 
 		return name;
 	}
 
-	public void setName(String name) {
+	public void setProductSubCatgoryName(String productSubCatgoryName) {
 
-		this.name = name;
+		this.name = productSubCatgoryName;
 	}
 
 	public Date getLastModifiedDate() {
@@ -87,19 +89,39 @@ public class ProductSubCategory {
 		this.lastModifiedDate = lastModifiedDate;
 	}
 
-	public ProductSubCategory() {
+	public int getProductCategoryId() {
+
+		return productCategoryId;
 	}
 
-	public ProductSubCategory(String name) {
+	public void setProductCategoryId(int productCategoryId) {
 
-		this.name = name;
+		this.productCategoryId = productCategoryId;
 	}
 
-	@Override
-	public String toString() {
+	public int getModifiedBy() {
 
-		return "ProductSubCategory [id=" + id + ", name=" + name + ", lastModifiedDate=" + lastModifiedDate + ", productCategoryId="
-				+ productCategoryId + "]";
+		return modifiedBy;
+	}
+
+	public void setModifiedBy(int modifiedBy) {
+
+		this.modifiedBy = modifiedBy;
+	}
+
+	public int getDeleted() {
+
+		return deleted;
+	}
+
+	public void setDeleted(int deleted) {
+
+		this.deleted = deleted;
+	}
+
+	public ProductSubCategory productSubCategory() {
+
+		return new ProductSubCategory();
 	}
 
 }

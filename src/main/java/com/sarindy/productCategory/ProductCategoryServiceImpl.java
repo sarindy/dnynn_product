@@ -21,10 +21,10 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
 	private ResponseCodeModel			responseCodeModel;
 
 	@Autowired
-	private ProductCategory productCategoryModel;
+	private ProductCategory					productCategoryModel;
 	@Autowired
-	private ProductCategoryHisServiceImpl productCategoryHisServiceImpl;
-	
+	private ProductCategoryHisServiceImpl	productCategoryHisServiceImpl;
+
 	@Autowired
 	private ProductCategoryHis productCategoryModelHis;
 
@@ -57,20 +57,11 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
 	}
 
 	@Override
-	public ProductCategory getProductCategoryService(String categoryName) {
+	public ProductCategory getProductCategoryService(int id) {
 
 		try {
 
-			ProductCategory productCategory = productCategoryModel.productCategory();
-			productCategory.setName(categoryName);
-			productCategory.setLastModifiedDate(new Date());
-			productCategory.setModifiedBy(0);
-			if (productCategoryRepository.findByName(categoryName) == null) {
-				return null;
-			} else {
-
-				return productCategory;
-			}
+			return productCategoryRepository.findOne(id);
 
 		} catch (Exception e) {
 			logger.error(e.getMessage());
@@ -101,9 +92,8 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
 		try {
 			ResponseCodeModel responseCode = responseCodeModel.responseCodeModel();
 			ProductCategory productCategory = productCategoryModel.productCategory();
-			productCategory = productCategoryRepository.findByName(oldName) ;
-			
-			
+			productCategory = productCategoryRepository.findByName(oldName);
+
 			if (productCategory == null) {
 				responseCode.setCode("002");
 				responseCode.setDescription("Category not found");;
@@ -169,6 +159,16 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
 
 	@Override
 	public ProductCategory getProductCategoryByNameService(String productCategoryName) {
+
+		try {
+			return productCategoryRepository.findByName(productCategoryName);
+		} catch (Exception e) {
+			logger.error(e.getMessage());
+			return null;
+		}
+	}
+
+	public ProductCategory getProductCategoryService(String productCategoryName) {
 
 		try {
 			return productCategoryRepository.findByName(productCategoryName);

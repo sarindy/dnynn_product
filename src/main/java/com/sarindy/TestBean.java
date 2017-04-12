@@ -19,6 +19,7 @@ public class TestBean {
 	@Autowired
 	private ProductCategoryServiceImpl productCategoryServiceImpl;
 	
+	
 	public void addCategory(String name){
 		productCategoryServiceImpl.addProductCategoryService(name, 0);
 	}
@@ -29,6 +30,14 @@ public class TestBean {
 	
 	public void deleteCategory(String categoryName,int modifiedBy){
 		productCategoryServiceImpl.deleteProductCategoryService(categoryName, modifiedBy);
+	}
+	
+	public void addSubCategory(String subCategoryName,int categoryId,int modifiedBy){
+		productSubCategoryServiceImpl.addProductSubCategoryService(subCategoryName, categoryId, modifiedBy);
+	}
+	
+	public void updateSubCategory(String categoryName,String oldName,int categoryId,int modifiedBy){
+		productSubCategoryServiceImpl.updateProductSubCategoryService(oldName, categoryName, categoryId, modifiedBy);
 	}
 	
 
