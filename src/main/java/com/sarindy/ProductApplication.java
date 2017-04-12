@@ -1,5 +1,8 @@
 package com.sarindy;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -10,27 +13,24 @@ public class ProductApplication implements CommandLineRunner {
 
 	@Autowired
 	private TestBean testBean;
-	
-	
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(ProductApplication.class, args);
 	}
 
 	@Override
 	public void run(String... arg0) throws Exception {
-		//testBean.addCategory("Phone & Comunnication");
-		//testBean.addCategory("Computer");
-		//testBean.addCategory("Cosmetic");
-		//testBean.updateProductCategory("new Phone", "phone");
-		//testBean.deleteProductCategory("phone");
-		//testBean.addProductSubCategory("Mobile Phone Accessories");
-		//testBean.addProductSubCategory("Power Bank");
-		//testBean.addCategory("Computer");
-		//testBean.updateProduct("Cosmeticss", "Cosmetic", 0);
-		//testBean.deleteCategory("Cosmetic", 0);
-		//testBean.addSubCategory("Power Bank", 5, 0);
-		testBean.updateSubCategory("Power Banks", "Power Bank", 5, 0);
+
+		//testBean.addCategory("");
+		//testBean.addSubCategory("Mobile Phone", 5, 0);
+		
+		/*List<String> properties = new ArrayList<String>();
+		properties.add("Dimensions");
+		testBean.addProductProperties(properties, 1, 2);*/
+		
+		//testBean.updateProductProperty("Dimensions", "Dimension", 0, 2);
+		testBean.deleteProductProperty("Dimensions", 1);
 
 	}
 }

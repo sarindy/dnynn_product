@@ -10,20 +10,22 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.persistence.UniqueConstraint;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Component;
 
 @Entity
-@Table(name = "product_property", uniqueConstraints = @UniqueConstraint(columnNames = { "name" }))
+@Table(name = "product_property_his")
 @Component
-public class ProductProperty {
+public class ProductPropertyHis {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "id")
 	private int id;
+
+	@Column(name = "product_property_id")
+	private int productPropertyId;
 
 	@Column(name = "name")
 	private String name;
@@ -41,33 +43,15 @@ public class ProductProperty {
 	@Column(name = "deleted")
 	private int deleted = 0;
 
-	public int getDeleted() {
+	public ProductPropertyHis() {
 
-		return deleted;
-	}
-
-	public void setDeleted(int deleted) {
-
-		this.deleted = deleted;
-	}
-
-	public ProductProperty() {
-
-	}
-
-	public ProductProperty(String name, int modifiedBy, int productSubCategoryId, int deleted) {
-
-		this.name = name;
-		this.modifiedBy = modifiedBy;
-		this.productSubCategoryId = productSubCategoryId;
-		this.deleted = deleted;
 	}
 
 	@Override
 	public String toString() {
 
-		return "ProductProperty [id=" + id + ", name=" + name + ", lastModifiedDate=" + lastModifiedDate + ", modifiedBy=" + modifiedBy
-				+ ", productSubCategoryId=" + productSubCategoryId + ", deleted=" + deleted + "]";
+		return "ProductPropertyHis [id=" + id + ", productPropertyId=" + productPropertyId + ", name=" + name + ", lastModifiedDate="
+				+ lastModifiedDate + ", modifiedBy=" + modifiedBy + ", productSubCategoryId=" + productSubCategoryId + ", deleted=" + deleted + "]";
 	}
 
 	public int getId() {
@@ -78,6 +62,16 @@ public class ProductProperty {
 	public void setId(int id) {
 
 		this.id = id;
+	}
+
+	public int getProductPropertyId() {
+
+		return productPropertyId;
+	}
+
+	public void setProductPropertyId(int productPropertyId) {
+
+		this.productPropertyId = productPropertyId;
 	}
 
 	public String getName() {
@@ -120,9 +114,19 @@ public class ProductProperty {
 		this.productSubCategoryId = productSubCategoryId;
 	}
 
-	public ProductProperty productProperty() {
+	public int getDeleted() {
 
-		return new ProductProperty();
+		return deleted;
+	}
+
+	public void setDeleted(int deleted) {
+
+		this.deleted = deleted;
+	}
+
+	public ProductPropertyHis productPropertyHis() {
+
+		return new ProductPropertyHis();
 	}
 
 }
