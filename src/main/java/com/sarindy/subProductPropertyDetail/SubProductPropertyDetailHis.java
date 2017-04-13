@@ -118,7 +118,7 @@ public class SubProductPropertyDetailHis {
 		this.deleted = deleted;
 	}
 	
-	public SubProductPropertyDetailHis productPropertyDetailHis(){
+	public SubProductPropertyDetailHis subProductPropertyDetailHis(){
 		return new SubProductPropertyDetailHis();
 	}
 

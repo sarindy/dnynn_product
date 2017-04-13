@@ -6,11 +6,11 @@ import com.sarindy.responseCode.ResponseCodeModel;
 
 public interface SubProductPropertyDetailService {
 
-	public ResponseCodeModel addSubProductPropertyDetailService(String subPropertyDetailName, int modifiedBy, int propertyId);
+	public ResponseCodeModel addSubProductPropertyDetailService(String subPropertyDetailName, int modifiedBy, int propertyDetailId);
 
 	public ResponseCodeModel deleteSubProductPropertyDetailService(String SubPropertyDetailName, int modifiedBy);
 
-	public ResponseCodeModel updateSubProductPropertyDetailService(String SubPropertyDetailName, String oldName, int modifiedBy, int propertyId);
+	public ResponseCodeModel updateSubProductPropertyDetailService(String SubPropertyDetailName, String oldName, int modifiedBy, int propertyDetailId);
 
 	public List<SubProductPropertyDetail> getAllSubProductPropertyDetailService();
 

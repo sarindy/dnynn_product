@@ -121,7 +121,7 @@ public class SubProductPropertyDetail {
 		this.deleted = deleted;
 	}
 
-	public SubProductPropertyDetail productPropertyDetail() {
+	public SubProductPropertyDetail subProductPropertyDetail() {
 
 		return new SubProductPropertyDetail();
 	}

@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.sarindy.productProperty.ProductPropertyServiceImpl;
+import com.sarindy.productPropertyDetail.ProductPropertyDetailServiceImpl;
 import com.sarindy.responseCode.ResponseCodeModel;
 
 @Service
@@ -18,38 +18,37 @@ public class SubProductPropertyDetailServiceImpl implements SubProductPropertyDe
 
 	@Autowired
 	private SubProductPropertyDetailRepository subProductPropertyDetailRepository;
+	
+	private ProductPropertyDetailServiceImpl productPropertyDetailServiceImpl;
+	
+	private SubProductPropertyDetail subProductPropertyDetailModel;
+	
+	private SubProductPropertyDetailHis subProductPropertyDetailHisModel;
+	
+	private SubProductPropertyDetailHisRepository subProductProprtyHisRepository;
+	
 
-	@Autowired
-	private ProductPropertyServiceImpl productPropertyServiceImpl;
-
-	@Autowired
-	private SubProductPropertyDetailHisRepository SubProductPropertyDetailHisRepo;
-
-	@Autowired
-	private SubProductPropertyDetail		subProductPropertyDetailModel;
-	@Autowired
-	private SubProductPropertyDetailHis	subProductPropertyDetailHisModel;
-
+	
 	@Override
 	public ResponseCodeModel addSubProductPropertyDetailService(String propertyDetailName, int modifiedBy, int propertyId) {
 
 		try {
 
-			if (productPropertyServiceImpl.getProductPropertyService(propertyId) == null) {
-				logger.info("Product Property not found.");
-				return new ResponseCodeModel("002", "Product Property  not found : ", modifiedBy);
+			if (productPropertyDetailServiceImpl.getProductPropertyDetailService(propertyId) == null) {
+				logger.info("Product Property Detail not found.");
+				return new ResponseCodeModel("002", "Product Property detail  not found : ", modifiedBy);
 			}
 
-			if (productPropertyDetailRepository.findByName(propertyDetailName) == null) {
-				SubProductPropertyDetail productPropertyDetail = productPropertyDetailModel.productPropertyDetail();
-				productPropertyDetail.setName(propertyDetailName);
-				productPropertyDetail.setLastModifiedDate(new Date());
-				productPropertyDetail.setLastModifiedBy(modifiedBy);
-				productPropertyDetail.setProductPropertyId(propertyId);
+			if (subProductPropertyDetailRepository.findByName(propertyDetailName) == null) {
+				SubProductPropertyDetail subProductPropertyDetail = subProductPropertyDetailModel.subProductPropertyDetail();
+				subProductPropertyDetail.setName(propertyDetailName);
+				subProductPropertyDetail.setLastModifiedDate(new Date());
+				subProductPropertyDetail.setLastModifiedBy(modifiedBy);
+				subProductPropertyDetail.setProductPropertyId(propertyId);
 
-				productPropertyDetailRepository.save(productPropertyDetail);
-				logger.info("Product Property Detail Added.");
-				return new ResponseCodeModel("000", "Product Property Detail Added : " + productPropertyDetail.toString(), modifiedBy);
+				subProductPropertyDetailRepository.save(subProductPropertyDetail);
+				logger.info("Sub Product Property Detail Added.");
+				return new ResponseCodeModel("000", "Sub Product Property Detail Added : " + subProductPropertyDetail.toString(), modifiedBy);
 
 			}
 
@@ -74,11 +73,11 @@ public class SubProductPropertyDetailServiceImpl implements SubProductPropertyDe
 	public ResponseCodeModel deleteSubProductPropertyDetailService(String propertyDetailName, int modifiedBy) {
 
 		try {
-			SubProductPropertyDetail productPropertyDetail = productPropertyDetailModel.productPropertyDetail();
-			productPropertyDetail = productPropertyDetailRepository.findByName(propertyDetailName);
+			SubProductPropertyDetail productPropertyDetail = subProductPropertyDetailModel.subProductPropertyDetail();
+			productPropertyDetail = subProductPropertyDetailRepository.findByName(propertyDetailName);
 			if (productPropertyDetail != null) {
 
-				SubProductPropertyDetailHis productPropertyDetailHis = productPropertyDetailHisModel.productPropertyDetailHis();
+				SubProductPropertyDetailHis productPropertyDetailHis = subProductPropertyDetailHisModel.subProductPropertyDetailHis();
 				productPropertyDetailHis.setName(productPropertyDetail.getName());
 				productPropertyDetailHis.setLastModifiedDate(productPropertyDetail.getLastModifiedDate());
 				productPropertyDetailHis.setLastModifiedBy(productPropertyDetail.getLastModifiedBy());
@@ -88,16 +87,16 @@ public class SubProductPropertyDetailServiceImpl implements SubProductPropertyDe
 				productPropertyDetail.setDeleted(1);
 				productPropertyDetail.setLastModifiedDate(new Date());
 				productPropertyDetail.setLastModifiedBy(modifiedBy);
-				productPropertyDetailRepository.save(productPropertyDetail);
-				productPropertyDetailHisRepo.save(productPropertyDetailHis);
-				logger.info("Product Property Detail deleted.");
-				return new ResponseCodeModel("000", "Product Property Detail deleted : " + productPropertyDetail.toString(), modifiedBy);
+				subProductPropertyDetailRepository.save(productPropertyDetail);
+				subProductProprtyHisRepository.save(productPropertyDetailHis);
+				logger.info("Sub Product Property Detail deleted.");
+				return new ResponseCodeModel("000", "Sub Product Property Detail deleted : " + productPropertyDetail.toString(), modifiedBy);
 
 			}
 
 			else {
-				logger.info("Product Property Detail not found.");
-				return new ResponseCodeModel("002", "Product Property Detail not found, named : " + propertyDetailName, modifiedBy);
+				logger.info("Sub Product Property Detail not found.");
+				return new ResponseCodeModel("002", "Sub Product Property Detail not found, named : " + propertyDetailName, modifiedBy);
 			}
 
 		} catch (Exception e) {
@@ -116,16 +115,16 @@ public class SubProductPropertyDetailServiceImpl implements SubProductPropertyDe
 
 		try {
 
-			if (productPropertyServiceImpl.getProductPropertyService(propertyId) == null) {
-				logger.info("Product Property not found.");
-				return new ResponseCodeModel("002", "Product Property  not found : ", modifiedBy);
+			if (productPropertyDetailServiceImpl.getProductPropertyDetailService(propertyId) == null) {
+				logger.info("Product Property detail not found.");
+				return new ResponseCodeModel("002", "Product Property detail not found : ", modifiedBy);
 			}
 
-			SubProductPropertyDetail productPropertyDetail = productPropertyDetailModel.productPropertyDetail();
-			productPropertyDetail = productPropertyDetailRepository.findByName(oldName);
+			SubProductPropertyDetail productPropertyDetail = subProductPropertyDetailModel.subProductPropertyDetail();
+			productPropertyDetail = subProductPropertyDetailRepository.findByName(oldName);
 			if (productPropertyDetail != null) {
 
-				SubProductPropertyDetailHis productPropertyDetailHis = productPropertyDetailHisModel.productPropertyDetailHis();
+				SubProductPropertyDetailHis productPropertyDetailHis = subProductPropertyDetailHisModel.subProductPropertyDetailHis();
 				productPropertyDetailHis.setName(productPropertyDetail.getName());
 				productPropertyDetailHis.setLastModifiedDate(productPropertyDetail.getLastModifiedDate());
 				productPropertyDetailHis.setLastModifiedBy(productPropertyDetail.getLastModifiedBy());
@@ -137,16 +136,16 @@ public class SubProductPropertyDetailServiceImpl implements SubProductPropertyDe
 				productPropertyDetail.setLastModifiedBy(modifiedBy);
 				productPropertyDetail.setProductPropertyId(propertyId);
 
-				productPropertyDetailRepository.save(productPropertyDetail);
-				productPropertyDetailHisRepo.save(productPropertyDetailHis);
-				logger.info("Product Property Detail update.");
-				return new ResponseCodeModel("000", "Product Property Detail update : " + productPropertyDetail.toString(), modifiedBy);
+				subProductPropertyDetailRepository.save(productPropertyDetail);
+				subProductProprtyHisRepository.save(productPropertyDetailHis);
+				logger.info("Sub Product Property Detail update.");
+				return new ResponseCodeModel("000", "Sub Product Property Detail update : " + productPropertyDetail.toString(), modifiedBy);
 
 			}
 
 			else {
-				logger.info("Product Property Detail not found.");
-				return new ResponseCodeModel("002", "Product Property Detail not found, named : " + propertyDetailName, modifiedBy);
+				logger.info("Sub Product Property Detail not found.");
+				return new ResponseCodeModel("002", "Sub Product Property Detail not found, named : " + propertyDetailName, modifiedBy);
 			}
 
 		} catch (Exception e) {
@@ -164,7 +163,7 @@ public class SubProductPropertyDetailServiceImpl implements SubProductPropertyDe
 	public List<SubProductPropertyDetail> getAllSubProductPropertyDetailService() {
 
 		try {
-			return (List<SubProductPropertyDetail>) productPropertyDetailRepository.findAll();
+			return (List<SubProductPropertyDetail>) subProductPropertyDetailRepository.findAll();
 
 		} catch (Exception e) {
 			logger.error(e.toString() + " " + e.getMessage());
@@ -181,7 +180,7 @@ public class SubProductPropertyDetailServiceImpl implements SubProductPropertyDe
 	public SubProductPropertyDetail getSubProductPropertyDetailService(int id) {
 
 		try {
-			return productPropertyDetailRepository.findOne(id);
+			return subProductPropertyDetailRepository.findOne(id);
 
 		} catch (Exception e) {
 			logger.error(e.toString() + " " + e.getMessage());
@@ -198,7 +197,7 @@ public class SubProductPropertyDetailServiceImpl implements SubProductPropertyDe
 	public SubProductPropertyDetail getSubProductPropertyDetailServiceByNameService(String name) {
 
 		try {
-			return productPropertyDetailRepository.findByName(name);
+			return subProductPropertyDetailRepository.findByName(name);
 
 		} catch (Exception e) {
 			logger.error(e.toString() + " " + e.getMessage());
@@ -215,7 +214,7 @@ public class SubProductPropertyDetailServiceImpl implements SubProductPropertyDe
 	public List<SubProductPropertyDetail> getSubProductPropertyDetailServiceByNameLikeService(String name) {
 
 		try {
-			return (List<SubProductPropertyDetail>) productPropertyDetailRepository.findByNameLikeOrderByNameAsc(name);
+			return (List<SubProductPropertyDetail>) subProductPropertyDetailRepository.findByNameLikeOrderByNameAsc(name);
 
 		} catch (Exception e) {
 			logger.error(e.toString() + " " + e.getMessage());
