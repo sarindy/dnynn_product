@@ -1,0 +1,125 @@
+package com.sarindy.subProductPropertyDetail;
+
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.stereotype.Component;
+
+@Entity
+@Table(name = "sub_product_property_detail_his")
+@Component
+public class SubProductPropertyDetailHis {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "id")
+	private int id;
+
+	@Column(name = "sub_product_property_detail_his_id")
+	private int subProductPropertyDetailHisId;
+
+	@Column(name = "name")
+	private String name;
+
+	@Column(name = "last_modified_date")
+	@DateTimeFormat(pattern = "dd/MM/yyyy HH:mm:ss")
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date lastModifiedDate;
+
+	@Column(name = "product_property_id")
+	private int productPropertyId;
+
+	@Column(name = "last_modified_by")
+	private int lastModifiedBy;
+
+	@Column(name = "deleted")
+	private int deleted = 0;
+
+	public SubProductPropertyDetailHis() {
+
+	}
+
+	public int getId() {
+
+		return id;
+	}
+
+	public void setId(int id) {
+
+		this.id = id;
+	}
+
+	public int getProductPropertyDetailHisId() {
+
+		return getProductPropertyDetailHisId();
+	}
+
+	public void setProductPropertyDetailHisId(int productPropertyDetailHisId) {
+
+		this.subProductPropertyDetailHisId = productPropertyDetailHisId;
+	}
+
+	public String getName() {
+
+		return name;
+	}
+
+	public void setName(String name) {
+
+		this.name = name;
+	}
+
+	public Date getLastModifiedDate() {
+
+		return lastModifiedDate;
+	}
+
+	public void setLastModifiedDate(Date lastModifiedDate) {
+
+		this.lastModifiedDate = lastModifiedDate;
+	}
+
+	public int getProductPropertyId() {
+
+		return productPropertyId;
+	}
+
+	public void setProductPropertyId(int productPropertyId) {
+
+		this.productPropertyId = productPropertyId;
+	}
+
+	public int getLastModifiedBy() {
+
+		return lastModifiedBy;
+	}
+
+	public void setLastModifiedBy(int lastModifiedBy) {
+
+		this.lastModifiedBy = lastModifiedBy;
+	}
+
+	public int getDeleted() {
+
+		return deleted;
+	}
+
+	public void setDeleted(int deleted) {
+
+		this.deleted = deleted;
+	}
+	
+	public SubProductPropertyDetailHis productPropertyDetailHis(){
+		return new SubProductPropertyDetailHis();
+	}
+
+}
