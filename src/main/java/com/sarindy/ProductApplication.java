@@ -22,28 +22,26 @@ public class ProductApplication implements CommandLineRunner {
 	@Override
 	public void run(String... arg0) throws Exception {
 
-		// testBean.addCategory("");
-		// testBean.addSubCategory("Mobile Phone", 5, 0);
+		// testBean.addCategory("Phone and Communication");
+		// testBean.addSubCategory("Mobile Phone", 1, 0);
 
 		/*
-		 * List<String> properties = new ArrayList<String>();
-		 * properties.add("Dimensions");
-		 * testBean.addProductProperties(properties, 1, 2);
-		 */
-
-		// testBean.updateProductProperty("Dimensions", "Dimension", 0, 2);
-		// testBean.deleteProductProperty("Dimensions", 1);
-
-		/*
-		 * List<String> properties = new ArrayList<String>();
-		 * properties.add("Touch Screen"); properties.add("Message");
-		 * properties.add("DUst Proof"); properties.add("Email");
-		 * properties.add("FM Radio"); properties.add("Front Camera");
-		 * properties.add("Camera"); properties.add("Wifi");
-		 * properties.add("Mp3 Player");
+		 * List<String> myList = new ArrayList<String>(); myList.add("Feature");
+		 * myList.add("Language"); myList.add("Color"); myList.add("Design");
+		 * myList.add("Cellular");
 		 * 
-		 * testBean.addPropertyDetails(properties, 0, 1);
+		 * testBean.addProductProperties(myList, 1, 1);
 		 */
-		testBean.updatePropertyDetail();
+		
+		
+		/*List<String> myList = new ArrayList<String>();
+		myList.add("2G");
+		myList.add("3G");
+		myList.add("4G");
+		testBean.addPropertyDetails(myList, 0, 5);*/
+		
+		
+
+		//testBean.addSubProductPropertyDetail("LTE band 1(2100), 2(1900), 3(1800), 4(1700/2100), 5(850), 7(2600), 8(900), 17(700), 20(800), 28(700)", 0, 3);
 	}
 }

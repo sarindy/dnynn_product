@@ -3779,3 +3779,1181 @@ Consider defining a bean of type 'com.sarindy.productSubCategory.ProductSubCateg
 2017-04-12 16:44:44 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:987 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@71646d0c: startup date [Wed Apr 12 16:44:13 ICT 2017]; root of context hierarchy
 2017-04-12 16:44:44 INFO  o.s.j.e.a.AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
 2017-04-12 16:44:44 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:548 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-04-13 14:36:35 INFO  c.s.ProductApplication:48 - Starting ProductApplication on HQB100DIT15 with PID 5368 (E:\Documents\Java\NeonWorkspace\dnynn_product\target\classes started by Dy in E:\Documents\Java\NeonWorkspace\dnynn_product)
+2017-04-13 14:36:35 INFO  c.s.ProductApplication:637 - No active profile set, falling back to default profiles: default
+2017-04-13 14:36:35 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@357814: startup date [Thu Apr 13 14:36:35 ICT 2017]; root of context hierarchy
+2017-04-13 14:36:37 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$53d25c7c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-13 14:36:37 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-04-13 14:36:37 INFO  o.a.c.c.StandardService:179 - Starting service Tomcat
+2017-04-13 14:36:37 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-13 14:36:37 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-04-13 14:36:37 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 1882 ms
+2017-04-13 14:36:37 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-13 14:36:37 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-13 14:36:37 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-13 14:36:37 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-13 14:36:37 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-13 14:36:38 ERROR o.a.t.j.p.ConnectionPool:181 - Unable to create initial connections of pool.
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'product'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2205)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:732)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:664)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:479)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:326)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:366)
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:139)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:105)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$bd58c09c.CGLIB$jpaVendorAdapter$4(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$bd58c09c$$FastClassBySpringCGLIB$$ce74fb5a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$bd58c09c.jpaVendorAdapter(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1081)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:856)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.sarindy.ProductApplication.main(ProductApplication.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2017-04-13 14:36:38 WARN  o.s.b.a.o.j.DatabaseLookup:80 - Unable to determine jdbc url from datasource
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'product'
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:339)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:366)
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:139)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:105)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$bd58c09c.CGLIB$jpaVendorAdapter$4(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$bd58c09c$$FastClassBySpringCGLIB$$ce74fb5a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$bd58c09c.jpaVendorAdapter(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1081)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:856)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.sarindy.ProductApplication.main(ProductApplication.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'product'
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:326)
+	... 66 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'product'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2205)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:732)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:664)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:479)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	... 67 common frames omitted
+2017-04-13 14:36:38 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-04-13 14:36:38 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-04-13 14:36:38 INFO  o.h.Version:37 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-04-13 14:36:38 INFO  o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2017-04-13 14:36:38 INFO  o.h.c.Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-04-13 14:36:38 INFO  o.h.a.c.Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-04-13 14:36:38 ERROR o.a.t.j.p.ConnectionPool:181 - Unable to create initial connections of pool.
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'product'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2205)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:732)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:664)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:479)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:254)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:228)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:847)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:874)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:370)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:359)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1081)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:856)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.sarindy.ProductApplication.main(ProductApplication.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2017-04-13 14:36:38 WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator:132 - HHH000342: Could not obtain connection to query metadata : Unknown database 'product'
+2017-04-13 14:36:38 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-13 14:36:38 INFO  o.h.e.j.e.i.LobCreatorBuilderImpl:63 - HHH000422: Disabling contextual LOB creation as connection was null
+2017-04-13 14:36:38 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-04-13 14:36:39 ERROR o.a.t.j.p.ConnectionPool:181 - Unable to create initial connections of pool.
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'product'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2205)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:732)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:664)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:479)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.tool.schema.internal.TargetDatabaseImpl.prepare(TargetDatabaseImpl.java:38)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:57)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:134)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:101)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:472)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:370)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:359)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1081)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:856)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.sarindy.ProductApplication.main(ProductApplication.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2017-04-13 14:36:39 WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:550 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+2017-04-13 14:36:39 INFO  o.a.c.c.StandardService:179 - Stopping service Tomcat
+2017-04-13 14:36:39 INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer:101 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-04-13 14:36:39 ERROR o.s.b.SpringApplication:815 - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1081)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:856)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.sarindy.ProductApplication.main(ProductApplication.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:954)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:882)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:370)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:359)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 21 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Unable to open JDBC connection for schema management target
+	at org.hibernate.tool.schema.internal.TargetDatabaseImpl.prepare(TargetDatabaseImpl.java:42)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:57)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:134)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:101)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:472)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	... 27 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'product'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2205)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:732)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:664)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:479)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.tool.schema.internal.TargetDatabaseImpl.prepare(TargetDatabaseImpl.java:38)
+	... 33 common frames omitted
+2017-04-13 14:37:11 INFO  c.s.ProductApplication:48 - Starting ProductApplication on HQB100DIT15 with PID 4860 (E:\Documents\Java\NeonWorkspace\dnynn_product\target\classes started by Dy in E:\Documents\Java\NeonWorkspace\dnynn_product)
+2017-04-13 14:37:11 INFO  c.s.ProductApplication:637 - No active profile set, falling back to default profiles: default
+2017-04-13 14:37:11 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@357814: startup date [Thu Apr 13 14:37:11 ICT 2017]; root of context hierarchy
+2017-04-13 14:37:12 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$30a5bbf7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-13 14:37:12 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-04-13 14:37:13 INFO  o.a.c.c.StandardService:179 - Starting service Tomcat
+2017-04-13 14:37:13 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-13 14:37:13 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-04-13 14:37:13 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 1781 ms
+2017-04-13 14:37:13 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-13 14:37:13 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-13 14:37:13 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-13 14:37:13 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-13 14:37:13 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-13 14:37:13 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-04-13 14:37:13 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-04-13 14:37:13 INFO  o.h.Version:37 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-04-13 14:37:13 INFO  o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2017-04-13 14:37:13 INFO  o.h.c.Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-04-13 14:37:13 INFO  o.h.a.c.Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-04-13 14:37:14 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-13 14:37:14 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-04-13 14:37:14 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: product
+2017-04-13 14:37:14 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: product
+2017-04-13 14:37:14 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: product_category
+2017-04-13 14:37:14 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: product_category
+2017-04-13 14:37:14 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: product_category_his
+2017-04-13 14:37:14 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: product_category_his
+2017-04-13 14:37:14 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: product_property
+2017-04-13 14:37:14 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: product_property
+2017-04-13 14:37:14 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: product_property_detail
+2017-04-13 14:37:14 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: product_property_detail
+2017-04-13 14:37:14 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: product_property_detail_his
+2017-04-13 14:37:14 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: product_property_detail_his
+2017-04-13 14:37:14 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: product_property_his
+2017-04-13 14:37:14 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: product_property_his
+2017-04-13 14:37:14 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: product_sub_category
+2017-04-13 14:37:14 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: product_sub_category
+2017-04-13 14:37:14 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: product_sub_category_his
+2017-04-13 14:37:14 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: product_sub_category_his
+2017-04-13 14:37:14 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: response_code
+2017-04-13 14:37:14 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: response_code
+2017-04-13 14:37:14 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: response_code_his
+2017-04-13 14:37:14 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: response_code_his
+2017-04-13 14:37:14 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: sub_product_property_detail
+2017-04-13 14:37:14 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: sub_product_property_detail
+2017-04-13 14:37:14 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: sub_product_property_detail_his
+2017-04-13 14:37:14 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: sub_product_property_detail_his
+2017-04-13 14:37:15 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-04-13 14:37:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@357814: startup date [Thu Apr 13 14:37:11 ICT 2017]; root of context hierarchy
+2017-04-13 14:37:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/addProduct],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.addProduct(com.sarindy.product.Product)
+2017-04-13 14:37:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/deleteProduct],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.deleteProduct(com.sarindy.product.Product)
+2017-04-13 14:37:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProduct],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public com.sarindy.product.Product com.sarindy.product.ProductController.getProduct(com.sarindy.product.Product)
+2017-04-13 14:37:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductByName],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public com.sarindy.product.Product com.sarindy.product.ProductController.getProductByName(com.sarindy.product.Product)
+2017-04-13 14:37:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/updateProduct],methods=[POST],consumes=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.updateProduct(com.sarindy.product.Product)
+2017-04-13 14:37:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getAllProduct],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public java.util.List<com.sarindy.product.Product> com.sarindy.product.ProductController.getAllProduct()
+2017-04-13 14:37:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductByNameLike],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public java.util.List<com.sarindy.product.Product> com.sarindy.product.ProductController.getProductByNameLike(com.sarindy.product.Product)
+2017-04-13 14:37:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/addProductCategory],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.sarindy.productCategory.ProductCategoryController.addProductCategory()
+2017-04-13 14:37:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByIdJson/{id}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.sarindy.productSubCategory.ProductSubCategory> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryById(int)
+2017-04-13 14:37:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getAllProductSubCategory],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.sarindy.productSubCategory.ProductSubCategory>> com.sarindy.productSubCategory.ProductSubCategoryController.getAllProductSubCategory()
+2017-04-13 14:37:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByNameLikeJson/{name}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.sarindy.productSubCategory.ProductSubCategory>> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryByNameLike(java.lang.String)
+2017-04-13 14:37:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByNameJson/{name}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.sarindy.productSubCategory.ProductSubCategory> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryByName(java.lang.String)
+2017-04-13 14:37:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-13 14:37:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-13 14:37:15 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 14:37:15 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 14:37:15 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 14:37:16 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-04-13 14:37:16 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-04-13 14:37:16 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:198 - Tomcat started on port(s): 8080 (http)
+2017-04-13 14:37:16 INFO  c.s.p.ProductPropertyDetailServiceImpl:120 - Product Property not found.
+2017-04-13 14:37:16 INFO  c.s.ProductApplication:57 - Started ProductApplication in 5.732 seconds (JVM running for 6.103)
+2017-04-13 14:40:43 INFO  c.s.ProductApplication:48 - Starting ProductApplication on HQB100DIT15 with PID 2136 (E:\Documents\Java\NeonWorkspace\dnynn_product\target\classes started by Dy in E:\Documents\Java\NeonWorkspace\dnynn_product)
+2017-04-13 14:40:43 INFO  c.s.ProductApplication:637 - No active profile set, falling back to default profiles: default
+2017-04-13 14:40:43 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@357814: startup date [Thu Apr 13 14:40:43 ICT 2017]; root of context hierarchy
+2017-04-13 14:40:44 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ad2e4eec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-13 14:40:45 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-04-13 14:40:45 INFO  o.a.c.c.StandardService:179 - Starting service Tomcat
+2017-04-13 14:40:45 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-13 14:40:45 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-04-13 14:40:45 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 1758 ms
+2017-04-13 14:40:45 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-13 14:40:45 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-13 14:40:45 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-13 14:40:45 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-13 14:40:45 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-13 14:40:45 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-04-13 14:40:45 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-04-13 14:40:45 INFO  o.h.Version:37 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-04-13 14:40:45 INFO  o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2017-04-13 14:40:46 INFO  o.h.c.Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-04-13 14:40:46 INFO  o.h.a.c.Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-04-13 14:40:46 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-13 14:40:46 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-04-13 14:40:46 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-04-13 14:40:47 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@357814: startup date [Thu Apr 13 14:40:43 ICT 2017]; root of context hierarchy
+2017-04-13 14:40:47 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/addProduct],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.addProduct(com.sarindy.product.Product)
+2017-04-13 14:40:47 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/deleteProduct],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.deleteProduct(com.sarindy.product.Product)
+2017-04-13 14:40:47 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/updateProduct],methods=[POST],consumes=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.updateProduct(com.sarindy.product.Product)
+2017-04-13 14:40:47 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getAllProduct],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public java.util.List<com.sarindy.product.Product> com.sarindy.product.ProductController.getAllProduct()
+2017-04-13 14:40:47 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProduct],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public com.sarindy.product.Product com.sarindy.product.ProductController.getProduct(com.sarindy.product.Product)
+2017-04-13 14:40:47 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductByName],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public com.sarindy.product.Product com.sarindy.product.ProductController.getProductByName(com.sarindy.product.Product)
+2017-04-13 14:40:47 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductByNameLike],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public java.util.List<com.sarindy.product.Product> com.sarindy.product.ProductController.getProductByNameLike(com.sarindy.product.Product)
+2017-04-13 14:40:47 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/addProductCategory],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.sarindy.productCategory.ProductCategoryController.addProductCategory()
+2017-04-13 14:40:47 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByNameLikeJson/{name}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.sarindy.productSubCategory.ProductSubCategory>> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryByNameLike(java.lang.String)
+2017-04-13 14:40:47 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getAllProductSubCategory],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.sarindy.productSubCategory.ProductSubCategory>> com.sarindy.productSubCategory.ProductSubCategoryController.getAllProductSubCategory()
+2017-04-13 14:40:47 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByIdJson/{id}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.sarindy.productSubCategory.ProductSubCategory> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryById(int)
+2017-04-13 14:40:47 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByNameJson/{name}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.sarindy.productSubCategory.ProductSubCategory> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryByName(java.lang.String)
+2017-04-13 14:40:47 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-13 14:40:47 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-13 14:40:47 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 14:40:47 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 14:40:47 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 14:40:48 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-04-13 14:40:48 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-04-13 14:40:48 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:198 - Tomcat started on port(s): 8080 (http)
+2017-04-13 14:40:48 INFO  o.h.h.i.QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-13 14:40:48 INFO  c.s.ProductApplication:57 - Started ProductApplication in 5.333 seconds (JVM running for 5.706)
+2017-04-13 14:41:35 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:987 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@357814: startup date [Thu Apr 13 14:40:43 ICT 2017]; root of context hierarchy
+2017-04-13 14:41:35 INFO  o.s.j.e.a.AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-04-13 14:41:35 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:548 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-04-13 14:41:36 INFO  c.s.ProductApplication:48 - Starting ProductApplication on HQB100DIT15 with PID 2136 (E:\Documents\Java\NeonWorkspace\dnynn_product\target\classes started by Dy in E:\Documents\Java\NeonWorkspace\dnynn_product)
+2017-04-13 14:41:36 INFO  c.s.ProductApplication:637 - No active profile set, falling back to default profiles: default
+2017-04-13 14:41:36 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c5b7d66: startup date [Thu Apr 13 14:41:36 ICT 2017]; root of context hierarchy
+2017-04-13 14:41:36 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ad2e4eec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-13 14:41:36 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-04-13 14:41:36 INFO  o.a.c.c.StandardService:179 - Starting service Tomcat
+2017-04-13 14:41:36 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-13 14:41:36 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-04-13 14:41:36 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 585 ms
+2017-04-13 14:41:36 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-13 14:41:36 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-13 14:41:36 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-13 14:41:36 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-13 14:41:36 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-13 14:41:37 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-04-13 14:41:37 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-04-13 14:41:37 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-13 14:41:37 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-04-13 14:41:37 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-04-13 14:41:37 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c5b7d66: startup date [Thu Apr 13 14:41:36 ICT 2017]; root of context hierarchy
+2017-04-13 14:41:37 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/addProduct],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.addProduct(com.sarindy.product.Product)
+2017-04-13 14:41:37 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/deleteProduct],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.deleteProduct(com.sarindy.product.Product)
+2017-04-13 14:41:37 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/updateProduct],methods=[POST],consumes=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.updateProduct(com.sarindy.product.Product)
+2017-04-13 14:41:37 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getAllProduct],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public java.util.List<com.sarindy.product.Product> com.sarindy.product.ProductController.getAllProduct()
+2017-04-13 14:41:37 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProduct],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public com.sarindy.product.Product com.sarindy.product.ProductController.getProduct(com.sarindy.product.Product)
+2017-04-13 14:41:37 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductByName],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public com.sarindy.product.Product com.sarindy.product.ProductController.getProductByName(com.sarindy.product.Product)
+2017-04-13 14:41:37 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductByNameLike],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public java.util.List<com.sarindy.product.Product> com.sarindy.product.ProductController.getProductByNameLike(com.sarindy.product.Product)
+2017-04-13 14:41:37 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/addProductCategory],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.sarindy.productCategory.ProductCategoryController.addProductCategory()
+2017-04-13 14:41:37 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByNameLikeJson/{name}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.sarindy.productSubCategory.ProductSubCategory>> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryByNameLike(java.lang.String)
+2017-04-13 14:41:37 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getAllProductSubCategory],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.sarindy.productSubCategory.ProductSubCategory>> com.sarindy.productSubCategory.ProductSubCategoryController.getAllProductSubCategory()
+2017-04-13 14:41:37 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByIdJson/{id}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.sarindy.productSubCategory.ProductSubCategory> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryById(int)
+2017-04-13 14:41:37 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByNameJson/{name}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.sarindy.productSubCategory.ProductSubCategory> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryByName(java.lang.String)
+2017-04-13 14:41:37 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-13 14:41:37 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-13 14:41:37 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 14:41:37 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 14:41:37 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 14:41:37 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-04-13 14:41:37 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-04-13 14:41:37 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:198 - Tomcat started on port(s): 8080 (http)
+2017-04-13 14:41:37 INFO  o.h.h.i.QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-13 14:41:37 INFO  c.s.p.ProductSubCategoryServiceImpl:54 - product sub category added. : ProductSubCategory [id=1, productSubCatgoryName=Mobile Phone, lastModifiedDate=Thu Apr 13 14:41:37 ICT 2017, productCategoryId=1, modifiedBy=0, deleted=0]
+2017-04-13 14:41:37 INFO  c.s.ProductApplication:57 - Started ProductApplication in 1.596 seconds (JVM running for 55.18)
+2017-04-13 14:45:38 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:987 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c5b7d66: startup date [Thu Apr 13 14:41:36 ICT 2017]; root of context hierarchy
+2017-04-13 14:45:38 INFO  o.s.j.e.a.AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-04-13 14:45:38 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:548 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-04-13 14:45:38 INFO  c.s.ProductApplication:48 - Starting ProductApplication on HQB100DIT15 with PID 2136 (E:\Documents\Java\NeonWorkspace\dnynn_product\target\classes started by Dy in E:\Documents\Java\NeonWorkspace\dnynn_product)
+2017-04-13 14:45:38 INFO  c.s.ProductApplication:637 - No active profile set, falling back to default profiles: default
+2017-04-13 14:45:38 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a8ab173: startup date [Thu Apr 13 14:45:38 ICT 2017]; root of context hierarchy
+2017-04-13 14:45:39 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ad2e4eec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-13 14:45:39 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-04-13 14:45:39 INFO  o.a.c.c.StandardService:179 - Starting service Tomcat
+2017-04-13 14:45:39 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-13 14:45:39 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-04-13 14:45:39 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 551 ms
+2017-04-13 14:45:39 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-13 14:45:39 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-13 14:45:39 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-13 14:45:39 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-13 14:45:39 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-13 14:45:39 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-04-13 14:45:39 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-04-13 14:45:39 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-13 14:45:39 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-04-13 14:45:39 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-04-13 14:45:40 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a8ab173: startup date [Thu Apr 13 14:45:38 ICT 2017]; root of context hierarchy
+2017-04-13 14:45:40 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/addProduct],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.addProduct(com.sarindy.product.Product)
+2017-04-13 14:45:40 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/deleteProduct],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.deleteProduct(com.sarindy.product.Product)
+2017-04-13 14:45:40 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/updateProduct],methods=[POST],consumes=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.updateProduct(com.sarindy.product.Product)
+2017-04-13 14:45:40 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getAllProduct],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public java.util.List<com.sarindy.product.Product> com.sarindy.product.ProductController.getAllProduct()
+2017-04-13 14:45:40 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProduct],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public com.sarindy.product.Product com.sarindy.product.ProductController.getProduct(com.sarindy.product.Product)
+2017-04-13 14:45:40 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductByName],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public com.sarindy.product.Product com.sarindy.product.ProductController.getProductByName(com.sarindy.product.Product)
+2017-04-13 14:45:40 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductByNameLike],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public java.util.List<com.sarindy.product.Product> com.sarindy.product.ProductController.getProductByNameLike(com.sarindy.product.Product)
+2017-04-13 14:45:40 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/addProductCategory],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.sarindy.productCategory.ProductCategoryController.addProductCategory()
+2017-04-13 14:45:40 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByNameLikeJson/{name}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.sarindy.productSubCategory.ProductSubCategory>> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryByNameLike(java.lang.String)
+2017-04-13 14:45:40 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getAllProductSubCategory],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.sarindy.productSubCategory.ProductSubCategory>> com.sarindy.productSubCategory.ProductSubCategoryController.getAllProductSubCategory()
+2017-04-13 14:45:40 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByIdJson/{id}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.sarindy.productSubCategory.ProductSubCategory> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryById(int)
+2017-04-13 14:45:40 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByNameJson/{name}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.sarindy.productSubCategory.ProductSubCategory> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryByName(java.lang.String)
+2017-04-13 14:45:40 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-13 14:45:40 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-13 14:45:40 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 14:45:40 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 14:45:40 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 14:45:40 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-04-13 14:45:40 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-04-13 14:45:40 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:198 - Tomcat started on port(s): 8080 (http)
+2017-04-13 14:45:40 INFO  c.s.p.ProductSubCategoryServiceImpl:171 - Get Product Sub Category
+2017-04-13 14:45:40 INFO  o.h.h.i.QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-13 14:45:40 INFO  c.s.p.ProductPropertyServiceImpl:54 - Product Property added
+2017-04-13 14:45:40 INFO  c.s.p.ProductSubCategoryServiceImpl:171 - Get Product Sub Category
+2017-04-13 14:45:40 INFO  c.s.p.ProductPropertyServiceImpl:54 - Product Property added
+2017-04-13 14:45:40 INFO  c.s.p.ProductSubCategoryServiceImpl:171 - Get Product Sub Category
+2017-04-13 14:45:40 INFO  c.s.p.ProductPropertyServiceImpl:54 - Product Property added
+2017-04-13 14:45:40 INFO  c.s.p.ProductSubCategoryServiceImpl:171 - Get Product Sub Category
+2017-04-13 14:45:40 INFO  c.s.p.ProductPropertyServiceImpl:54 - Product Property added
+2017-04-13 14:45:40 INFO  c.s.p.ProductSubCategoryServiceImpl:171 - Get Product Sub Category
+2017-04-13 14:45:40 INFO  c.s.p.ProductPropertyServiceImpl:54 - Product Property added
+2017-04-13 14:45:40 INFO  c.s.ProductApplication:57 - Started ProductApplication in 1.443 seconds (JVM running for 297.685)
+2017-04-13 14:49:50 INFO  c.s.ProductApplication:48 - Starting ProductApplication on HQB100DIT15 with PID 10548 (E:\Documents\Java\NeonWorkspace\dnynn_product\target\classes started by Dy in E:\Documents\Java\NeonWorkspace\dnynn_product)
+2017-04-13 14:49:50 INFO  c.s.ProductApplication:637 - No active profile set, falling back to default profiles: default
+2017-04-13 14:49:50 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4ebdb851: startup date [Thu Apr 13 14:49:50 ICT 2017]; root of context hierarchy
+2017-04-13 14:49:51 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6d2862a4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-13 14:49:52 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-04-13 14:49:52 INFO  o.a.c.c.StandardService:179 - Starting service Tomcat
+2017-04-13 14:49:52 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-13 14:49:52 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-04-13 14:49:52 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 1757 ms
+2017-04-13 14:49:52 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-13 14:49:52 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-13 14:49:52 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-13 14:49:52 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-13 14:49:52 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-13 14:49:52 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-04-13 14:49:52 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-04-13 14:49:53 INFO  o.h.Version:37 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-04-13 14:49:53 INFO  o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2017-04-13 14:49:53 INFO  o.h.c.Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-04-13 14:49:53 INFO  o.h.a.c.Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-04-13 14:49:53 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-13 14:49:53 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-04-13 14:49:53 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-04-13 14:49:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4ebdb851: startup date [Thu Apr 13 14:49:50 ICT 2017]; root of context hierarchy
+2017-04-13 14:49:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/deleteProduct],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.deleteProduct(com.sarindy.product.Product)
+2017-04-13 14:49:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/updateProduct],methods=[POST],consumes=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.updateProduct(com.sarindy.product.Product)
+2017-04-13 14:49:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductByName],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public com.sarindy.product.Product com.sarindy.product.ProductController.getProductByName(com.sarindy.product.Product)
+2017-04-13 14:49:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/addProduct],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.addProduct(com.sarindy.product.Product)
+2017-04-13 14:49:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProduct],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public com.sarindy.product.Product com.sarindy.product.ProductController.getProduct(com.sarindy.product.Product)
+2017-04-13 14:49:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getAllProduct],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public java.util.List<com.sarindy.product.Product> com.sarindy.product.ProductController.getAllProduct()
+2017-04-13 14:49:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductByNameLike],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public java.util.List<com.sarindy.product.Product> com.sarindy.product.ProductController.getProductByNameLike(com.sarindy.product.Product)
+2017-04-13 14:49:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/addProductCategory],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.sarindy.productCategory.ProductCategoryController.addProductCategory()
+2017-04-13 14:49:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getAllProductSubCategory],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.sarindy.productSubCategory.ProductSubCategory>> com.sarindy.productSubCategory.ProductSubCategoryController.getAllProductSubCategory()
+2017-04-13 14:49:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByIdJson/{id}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.sarindy.productSubCategory.ProductSubCategory> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryById(int)
+2017-04-13 14:49:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByNameLikeJson/{name}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.sarindy.productSubCategory.ProductSubCategory>> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryByNameLike(java.lang.String)
+2017-04-13 14:49:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByNameJson/{name}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.sarindy.productSubCategory.ProductSubCategory> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryByName(java.lang.String)
+2017-04-13 14:49:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-13 14:49:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-13 14:49:54 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 14:49:54 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 14:49:54 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 14:49:55 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-04-13 14:49:55 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-04-13 14:49:55 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:198 - Tomcat started on port(s): 8080 (http)
+2017-04-13 14:49:55 INFO  o.h.h.i.QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-13 14:49:55 INFO  c.s.p.ProductPropertyDetailServiceImpl:51 - Product Property Detail Added.
+2017-04-13 14:49:55 INFO  c.s.p.ProductPropertyDetailServiceImpl:51 - Product Property Detail Added.
+2017-04-13 14:49:55 INFO  c.s.p.ProductPropertyDetailServiceImpl:51 - Product Property Detail Added.
+2017-04-13 14:49:55 INFO  c.s.ProductApplication:57 - Started ProductApplication in 5.313 seconds (JVM running for 5.681)
+2017-04-13 15:04:05 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:987 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4ebdb851: startup date [Thu Apr 13 14:49:50 ICT 2017]; root of context hierarchy
+2017-04-13 15:04:05 INFO  o.s.j.e.a.AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-04-13 15:04:05 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:548 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-04-13 15:04:05 INFO  c.s.ProductApplication:48 - Starting ProductApplication on HQB100DIT15 with PID 10548 (E:\Documents\Java\NeonWorkspace\dnynn_product\target\classes started by Dy in E:\Documents\Java\NeonWorkspace\dnynn_product)
+2017-04-13 15:04:05 INFO  c.s.ProductApplication:637 - No active profile set, falling back to default profiles: default
+2017-04-13 15:04:05 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1907c4dd: startup date [Thu Apr 13 15:04:05 ICT 2017]; root of context hierarchy
+2017-04-13 15:04:06 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6d2862a4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-13 15:04:06 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-04-13 15:04:06 INFO  o.a.c.c.StandardService:179 - Starting service Tomcat
+2017-04-13 15:04:06 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-13 15:04:06 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-04-13 15:04:06 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 616 ms
+2017-04-13 15:04:06 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-13 15:04:06 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-13 15:04:06 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-13 15:04:06 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-13 15:04:06 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-13 15:04:06 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-04-13 15:04:06 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-04-13 15:04:06 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-13 15:04:06 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-04-13 15:04:06 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-04-13 15:04:07 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1907c4dd: startup date [Thu Apr 13 15:04:05 ICT 2017]; root of context hierarchy
+2017-04-13 15:04:07 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/deleteProduct],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.deleteProduct(com.sarindy.product.Product)
+2017-04-13 15:04:07 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/updateProduct],methods=[POST],consumes=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.updateProduct(com.sarindy.product.Product)
+2017-04-13 15:04:07 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductByName],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public com.sarindy.product.Product com.sarindy.product.ProductController.getProductByName(com.sarindy.product.Product)
+2017-04-13 15:04:07 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/addProduct],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.addProduct(com.sarindy.product.Product)
+2017-04-13 15:04:07 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProduct],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public com.sarindy.product.Product com.sarindy.product.ProductController.getProduct(com.sarindy.product.Product)
+2017-04-13 15:04:07 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getAllProduct],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public java.util.List<com.sarindy.product.Product> com.sarindy.product.ProductController.getAllProduct()
+2017-04-13 15:04:07 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductByNameLike],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public java.util.List<com.sarindy.product.Product> com.sarindy.product.ProductController.getProductByNameLike(com.sarindy.product.Product)
+2017-04-13 15:04:07 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/addProductCategory],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.sarindy.productCategory.ProductCategoryController.addProductCategory()
+2017-04-13 15:04:07 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getAllProductSubCategory],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.sarindy.productSubCategory.ProductSubCategory>> com.sarindy.productSubCategory.ProductSubCategoryController.getAllProductSubCategory()
+2017-04-13 15:04:07 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByIdJson/{id}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.sarindy.productSubCategory.ProductSubCategory> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryById(int)
+2017-04-13 15:04:07 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByNameLikeJson/{name}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.sarindy.productSubCategory.ProductSubCategory>> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryByNameLike(java.lang.String)
+2017-04-13 15:04:07 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByNameJson/{name}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.sarindy.productSubCategory.ProductSubCategory> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryByName(java.lang.String)
+2017-04-13 15:04:07 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-13 15:04:07 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-13 15:04:07 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 15:04:07 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 15:04:07 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 15:04:07 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-04-13 15:04:07 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-04-13 15:04:07 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:198 - Tomcat started on port(s): 8080 (http)
+2017-04-13 15:04:07 INFO  c.s.ProductApplication:57 - Started ProductApplication in 1.604 seconds (JVM running for 857.59)
+2017-04-13 15:13:30 INFO  c.s.ProductApplication:48 - Starting ProductApplication on HQB100DIT15 with PID 11568 (E:\Documents\Java\NeonWorkspace\dnynn_product\target\classes started by Dy in E:\Documents\Java\NeonWorkspace\dnynn_product)
+2017-04-13 15:13:30 INFO  c.s.ProductApplication:637 - No active profile set, falling back to default profiles: default
+2017-04-13 15:13:30 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@357814: startup date [Thu Apr 13 15:13:30 ICT 2017]; root of context hierarchy
+2017-04-13 15:13:31 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a536c728] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-13 15:13:32 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-04-13 15:13:32 INFO  o.a.c.c.StandardService:179 - Starting service Tomcat
+2017-04-13 15:13:32 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-13 15:13:32 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-04-13 15:13:32 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 1784 ms
+2017-04-13 15:13:32 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-13 15:13:32 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-13 15:13:32 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-13 15:13:32 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-13 15:13:32 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-13 15:13:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-04-13 15:13:33 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-04-13 15:13:33 INFO  o.h.Version:37 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-04-13 15:13:33 INFO  o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2017-04-13 15:13:33 INFO  o.h.c.Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-04-13 15:13:33 INFO  o.h.a.c.Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-04-13 15:13:33 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-13 15:13:33 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-04-13 15:13:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-04-13 15:13:34 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@357814: startup date [Thu Apr 13 15:13:30 ICT 2017]; root of context hierarchy
+2017-04-13 15:13:34 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductByNameLike],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public java.util.List<com.sarindy.product.Product> com.sarindy.product.ProductController.getProductByNameLike(com.sarindy.product.Product)
+2017-04-13 15:13:34 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductByName],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public com.sarindy.product.Product com.sarindy.product.ProductController.getProductByName(com.sarindy.product.Product)
+2017-04-13 15:13:34 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/deleteProduct],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.deleteProduct(com.sarindy.product.Product)
+2017-04-13 15:13:34 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProduct],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public com.sarindy.product.Product com.sarindy.product.ProductController.getProduct(com.sarindy.product.Product)
+2017-04-13 15:13:34 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/updateProduct],methods=[POST],consumes=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.updateProduct(com.sarindy.product.Product)
+2017-04-13 15:13:34 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/addProduct],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.addProduct(com.sarindy.product.Product)
+2017-04-13 15:13:34 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getAllProduct],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public java.util.List<com.sarindy.product.Product> com.sarindy.product.ProductController.getAllProduct()
+2017-04-13 15:13:34 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/addProductCategory],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.sarindy.productCategory.ProductCategoryController.addProductCategory()
+2017-04-13 15:13:34 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByIdJson/{id}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.sarindy.productSubCategory.ProductSubCategory> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryById(int)
+2017-04-13 15:13:34 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByNameJson/{name}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.sarindy.productSubCategory.ProductSubCategory> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryByName(java.lang.String)
+2017-04-13 15:13:34 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByNameLikeJson/{name}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.sarindy.productSubCategory.ProductSubCategory>> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryByNameLike(java.lang.String)
+2017-04-13 15:13:34 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getAllProductSubCategory],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.sarindy.productSubCategory.ProductSubCategory>> com.sarindy.productSubCategory.ProductSubCategoryController.getAllProductSubCategory()
+2017-04-13 15:13:34 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-13 15:13:34 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-13 15:13:34 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 15:13:34 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 15:13:34 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 15:13:35 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-04-13 15:13:35 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-04-13 15:13:35 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:198 - Tomcat started on port(s): 8080 (http)
+2017-04-13 15:13:35 INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer:101 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-04-13 15:13:35 ERROR o.s.b.SpringApplication:815 - Application startup failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:760)
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.sarindy.ProductApplication.main(ProductApplication.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NullPointerException: null
+	at com.sarindy.TestBean.addSubProductPropertyDetail(TestBean.java:105)
+	at com.sarindy.ProductApplication.run(ProductApplication.java:45)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:776)
+	... 11 common frames omitted
+2017-04-13 15:13:35 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:987 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@357814: startup date [Thu Apr 13 15:13:30 ICT 2017]; root of context hierarchy
+2017-04-13 15:13:35 INFO  o.s.j.e.a.AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-04-13 15:13:35 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:548 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-04-13 15:14:16 INFO  c.s.ProductApplication:48 - Starting ProductApplication on HQB100DIT15 with PID 10656 (E:\Documents\Java\NeonWorkspace\dnynn_product\target\classes started by Dy in E:\Documents\Java\NeonWorkspace\dnynn_product)
+2017-04-13 15:14:16 INFO  c.s.ProductApplication:637 - No active profile set, falling back to default profiles: default
+2017-04-13 15:14:17 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7da86784: startup date [Thu Apr 13 15:14:17 ICT 2017]; root of context hierarchy
+2017-04-13 15:14:18 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$df1067d6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-13 15:14:19 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-04-13 15:14:19 INFO  o.a.c.c.StandardService:179 - Starting service Tomcat
+2017-04-13 15:14:19 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-13 15:14:19 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-04-13 15:14:19 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 2192 ms
+2017-04-13 15:14:19 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-13 15:14:19 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-13 15:14:19 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-13 15:14:19 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-13 15:14:19 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-13 15:14:20 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-04-13 15:14:20 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-04-13 15:14:20 INFO  o.h.Version:37 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-04-13 15:14:20 INFO  o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2017-04-13 15:14:20 INFO  o.h.c.Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-04-13 15:14:20 INFO  o.h.a.c.Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-04-13 15:14:20 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-13 15:14:20 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-04-13 15:14:21 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-04-13 15:14:21 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7da86784: startup date [Thu Apr 13 15:14:17 ICT 2017]; root of context hierarchy
+2017-04-13 15:14:22 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductByNameLike],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public java.util.List<com.sarindy.product.Product> com.sarindy.product.ProductController.getProductByNameLike(com.sarindy.product.Product)
+2017-04-13 15:14:22 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductByName],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public com.sarindy.product.Product com.sarindy.product.ProductController.getProductByName(com.sarindy.product.Product)
+2017-04-13 15:14:22 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/addProduct],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.addProduct(com.sarindy.product.Product)
+2017-04-13 15:14:22 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/deleteProduct],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.deleteProduct(com.sarindy.product.Product)
+2017-04-13 15:14:22 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProduct],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public com.sarindy.product.Product com.sarindy.product.ProductController.getProduct(com.sarindy.product.Product)
+2017-04-13 15:14:22 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getAllProduct],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public java.util.List<com.sarindy.product.Product> com.sarindy.product.ProductController.getAllProduct()
+2017-04-13 15:14:22 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/updateProduct],methods=[POST],consumes=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.updateProduct(com.sarindy.product.Product)
+2017-04-13 15:14:22 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/addProductCategory],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.sarindy.productCategory.ProductCategoryController.addProductCategory()
+2017-04-13 15:14:22 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByNameLikeJson/{name}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.sarindy.productSubCategory.ProductSubCategory>> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryByNameLike(java.lang.String)
+2017-04-13 15:14:22 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByIdJson/{id}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.sarindy.productSubCategory.ProductSubCategory> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryById(int)
+2017-04-13 15:14:22 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getAllProductSubCategory],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.sarindy.productSubCategory.ProductSubCategory>> com.sarindy.productSubCategory.ProductSubCategoryController.getAllProductSubCategory()
+2017-04-13 15:14:22 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByNameJson/{name}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.sarindy.productSubCategory.ProductSubCategory> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryByName(java.lang.String)
+2017-04-13 15:14:22 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-13 15:14:22 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-13 15:14:22 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 15:14:22 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 15:14:22 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 15:14:22 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-04-13 15:14:23 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-04-13 15:14:23 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:198 - Tomcat started on port(s): 8080 (http)
+2017-04-13 15:14:42 INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer:101 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-04-13 15:14:42 ERROR o.s.b.SpringApplication:815 - Application startup failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:760)
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.sarindy.ProductApplication.main(ProductApplication.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NullPointerException: null
+	at com.sarindy.TestBean.addSubProductPropertyDetail(TestBean.java:105)
+	at com.sarindy.ProductApplication.run(ProductApplication.java:45)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:776)
+	... 11 common frames omitted
+2017-04-13 15:14:42 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:987 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7da86784: startup date [Thu Apr 13 15:14:17 ICT 2017]; root of context hierarchy
+2017-04-13 15:14:43 INFO  o.s.j.e.a.AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-04-13 15:14:43 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:548 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-04-13 15:15:04 INFO  c.s.ProductApplication:48 - Starting ProductApplication on HQB100DIT15 with PID 10360 (E:\Documents\Java\NeonWorkspace\dnynn_product\target\classes started by Dy in E:\Documents\Java\NeonWorkspace\dnynn_product)
+2017-04-13 15:15:04 INFO  c.s.ProductApplication:637 - No active profile set, falling back to default profiles: default
+2017-04-13 15:15:04 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f950239: startup date [Thu Apr 13 15:15:04 ICT 2017]; root of context hierarchy
+2017-04-13 15:15:06 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2a299f69] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-13 15:15:06 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-04-13 15:15:06 INFO  o.a.c.c.StandardService:179 - Starting service Tomcat
+2017-04-13 15:15:06 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-13 15:15:06 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-04-13 15:15:06 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 2192 ms
+2017-04-13 15:15:07 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-13 15:15:07 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-13 15:15:07 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-13 15:15:07 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-13 15:15:07 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-13 15:15:07 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-04-13 15:15:07 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-04-13 15:15:07 INFO  o.h.Version:37 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-04-13 15:15:07 INFO  o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2017-04-13 15:15:07 INFO  o.h.c.Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-04-13 15:15:07 INFO  o.h.a.c.Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-04-13 15:15:07 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-13 15:15:08 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-04-13 15:15:08 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-04-13 15:15:09 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f950239: startup date [Thu Apr 13 15:15:04 ICT 2017]; root of context hierarchy
+2017-04-13 15:15:09 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/deleteProduct],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.deleteProduct(com.sarindy.product.Product)
+2017-04-13 15:15:09 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/addProduct],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.addProduct(com.sarindy.product.Product)
+2017-04-13 15:15:09 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProduct],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public com.sarindy.product.Product com.sarindy.product.ProductController.getProduct(com.sarindy.product.Product)
+2017-04-13 15:15:09 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/updateProduct],methods=[POST],consumes=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.updateProduct(com.sarindy.product.Product)
+2017-04-13 15:15:09 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductByName],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public com.sarindy.product.Product com.sarindy.product.ProductController.getProductByName(com.sarindy.product.Product)
+2017-04-13 15:15:09 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getAllProduct],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public java.util.List<com.sarindy.product.Product> com.sarindy.product.ProductController.getAllProduct()
+2017-04-13 15:15:09 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductByNameLike],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public java.util.List<com.sarindy.product.Product> com.sarindy.product.ProductController.getProductByNameLike(com.sarindy.product.Product)
+2017-04-13 15:15:09 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/addProductCategory],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.sarindy.productCategory.ProductCategoryController.addProductCategory()
+2017-04-13 15:15:09 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getAllProductSubCategory],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.sarindy.productSubCategory.ProductSubCategory>> com.sarindy.productSubCategory.ProductSubCategoryController.getAllProductSubCategory()
+2017-04-13 15:15:09 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByIdJson/{id}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.sarindy.productSubCategory.ProductSubCategory> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryById(int)
+2017-04-13 15:15:09 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByNameJson/{name}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.sarindy.productSubCategory.ProductSubCategory> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryByName(java.lang.String)
+2017-04-13 15:15:09 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByNameLikeJson/{name}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.sarindy.productSubCategory.ProductSubCategory>> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryByNameLike(java.lang.String)
+2017-04-13 15:15:09 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-13 15:15:09 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-13 15:15:09 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 15:15:09 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 15:15:09 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 15:15:10 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-04-13 15:15:10 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-04-13 15:15:10 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:198 - Tomcat started on port(s): 8080 (http)
+2017-04-13 15:15:24 INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer:101 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-04-13 15:15:24 ERROR o.s.b.SpringApplication:815 - Application startup failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:760)
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.sarindy.ProductApplication.main(ProductApplication.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NullPointerException: null
+	at com.sarindy.TestBean.addSubProductPropertyDetail(TestBean.java:105)
+	at com.sarindy.ProductApplication.run(ProductApplication.java:45)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:776)
+	... 11 common frames omitted
+2017-04-13 15:15:24 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:987 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f950239: startup date [Thu Apr 13 15:15:04 ICT 2017]; root of context hierarchy
+2017-04-13 15:15:24 INFO  o.s.j.e.a.AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-04-13 15:15:24 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:548 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-04-13 15:16:22 INFO  c.s.ProductApplication:48 - Starting ProductApplication on HQB100DIT15 with PID 10304 (E:\Documents\Java\NeonWorkspace\dnynn_product\target\classes started by Dy in E:\Documents\Java\NeonWorkspace\dnynn_product)
+2017-04-13 15:16:22 INFO  c.s.ProductApplication:637 - No active profile set, falling back to default profiles: default
+2017-04-13 15:16:23 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@227af4fc: startup date [Thu Apr 13 15:16:23 ICT 2017]; root of context hierarchy
+2017-04-13 15:16:24 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7aec5e7d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-13 15:16:25 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-04-13 15:16:25 INFO  o.a.c.c.StandardService:179 - Starting service Tomcat
+2017-04-13 15:16:25 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-13 15:16:25 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-04-13 15:16:25 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 2208 ms
+2017-04-13 15:16:25 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-13 15:16:25 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-13 15:16:25 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-13 15:16:25 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-13 15:16:25 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-13 15:16:26 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-04-13 15:16:26 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-04-13 15:16:26 INFO  o.h.Version:37 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-04-13 15:16:26 INFO  o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2017-04-13 15:16:26 INFO  o.h.c.Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-04-13 15:16:26 INFO  o.h.a.c.Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-04-13 15:16:26 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-13 15:16:26 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-04-13 15:16:27 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-04-13 15:16:28 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@227af4fc: startup date [Thu Apr 13 15:16:23 ICT 2017]; root of context hierarchy
+2017-04-13 15:16:28 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/addProduct],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.addProduct(com.sarindy.product.Product)
+2017-04-13 15:16:28 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProduct],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public com.sarindy.product.Product com.sarindy.product.ProductController.getProduct(com.sarindy.product.Product)
+2017-04-13 15:16:28 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductByName],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public com.sarindy.product.Product com.sarindy.product.ProductController.getProductByName(com.sarindy.product.Product)
+2017-04-13 15:16:28 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/updateProduct],methods=[POST],consumes=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.updateProduct(com.sarindy.product.Product)
+2017-04-13 15:16:28 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/deleteProduct],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.deleteProduct(com.sarindy.product.Product)
+2017-04-13 15:16:28 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getAllProduct],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public java.util.List<com.sarindy.product.Product> com.sarindy.product.ProductController.getAllProduct()
+2017-04-13 15:16:28 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductByNameLike],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public java.util.List<com.sarindy.product.Product> com.sarindy.product.ProductController.getProductByNameLike(com.sarindy.product.Product)
+2017-04-13 15:16:28 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/addProductCategory],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.sarindy.productCategory.ProductCategoryController.addProductCategory()
+2017-04-13 15:16:28 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByNameJson/{name}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.sarindy.productSubCategory.ProductSubCategory> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryByName(java.lang.String)
+2017-04-13 15:16:28 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByIdJson/{id}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.sarindy.productSubCategory.ProductSubCategory> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryById(int)
+2017-04-13 15:16:28 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getAllProductSubCategory],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.sarindy.productSubCategory.ProductSubCategory>> com.sarindy.productSubCategory.ProductSubCategoryController.getAllProductSubCategory()
+2017-04-13 15:16:28 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByNameLikeJson/{name}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.sarindy.productSubCategory.ProductSubCategory>> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryByNameLike(java.lang.String)
+2017-04-13 15:16:28 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-13 15:16:28 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-13 15:16:28 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 15:16:28 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 15:16:28 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 15:16:28 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-04-13 15:16:29 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-04-13 15:16:29 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:198 - Tomcat started on port(s): 8080 (http)
+2017-04-13 15:16:29 INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer:101 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-04-13 15:16:29 ERROR o.s.b.SpringApplication:815 - Application startup failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:760)
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.sarindy.ProductApplication.main(ProductApplication.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NullPointerException: null
+	at com.sarindy.TestBean.addSubProductPropertyDetail(TestBean.java:105)
+	at com.sarindy.ProductApplication.run(ProductApplication.java:45)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:776)
+	... 11 common frames omitted
+2017-04-13 15:16:29 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:987 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@227af4fc: startup date [Thu Apr 13 15:16:23 ICT 2017]; root of context hierarchy
+2017-04-13 15:16:29 INFO  o.s.j.e.a.AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-04-13 15:16:29 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:548 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-04-13 15:17:49 INFO  c.s.ProductApplication:48 - Starting ProductApplication on HQB100DIT15 with PID 4044 (E:\Documents\Java\NeonWorkspace\dnynn_product\target\classes started by Dy in E:\Documents\Java\NeonWorkspace\dnynn_product)
+2017-04-13 15:17:49 INFO  c.s.ProductApplication:637 - No active profile set, falling back to default profiles: default
+2017-04-13 15:17:49 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63ee5dcb: startup date [Thu Apr 13 15:17:49 ICT 2017]; root of context hierarchy
+2017-04-13 15:17:51 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a8ba6d7e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-13 15:17:51 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-04-13 15:17:51 INFO  o.a.c.c.StandardService:179 - Starting service Tomcat
+2017-04-13 15:17:51 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-13 15:17:51 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-04-13 15:17:51 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 2161 ms
+2017-04-13 15:17:51 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-13 15:17:51 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-13 15:17:51 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-13 15:17:51 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-13 15:17:51 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-13 15:17:52 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-04-13 15:17:52 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-04-13 15:17:52 INFO  o.h.Version:37 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-04-13 15:17:52 INFO  o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2017-04-13 15:17:52 INFO  o.h.c.Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-04-13 15:17:52 INFO  o.h.a.c.Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-04-13 15:17:52 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-13 15:17:53 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-04-13 15:17:53 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-04-13 15:17:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63ee5dcb: startup date [Thu Apr 13 15:17:49 ICT 2017]; root of context hierarchy
+2017-04-13 15:17:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductByNameLike],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public java.util.List<com.sarindy.product.Product> com.sarindy.product.ProductController.getProductByNameLike(com.sarindy.product.Product)
+2017-04-13 15:17:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/addProduct],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.addProduct(com.sarindy.product.Product)
+2017-04-13 15:17:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/updateProduct],methods=[POST],consumes=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.updateProduct(com.sarindy.product.Product)
+2017-04-13 15:17:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getAllProduct],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public java.util.List<com.sarindy.product.Product> com.sarindy.product.ProductController.getAllProduct()
+2017-04-13 15:17:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProduct],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public com.sarindy.product.Product com.sarindy.product.ProductController.getProduct(com.sarindy.product.Product)
+2017-04-13 15:17:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductByName],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public com.sarindy.product.Product com.sarindy.product.ProductController.getProductByName(com.sarindy.product.Product)
+2017-04-13 15:17:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/deleteProduct],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.deleteProduct(com.sarindy.product.Product)
+2017-04-13 15:17:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/addProductCategory],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.sarindy.productCategory.ProductCategoryController.addProductCategory()
+2017-04-13 15:17:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByNameLikeJson/{name}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.sarindy.productSubCategory.ProductSubCategory>> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryByNameLike(java.lang.String)
+2017-04-13 15:17:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getAllProductSubCategory],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.sarindy.productSubCategory.ProductSubCategory>> com.sarindy.productSubCategory.ProductSubCategoryController.getAllProductSubCategory()
+2017-04-13 15:17:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByNameJson/{name}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.sarindy.productSubCategory.ProductSubCategory> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryByName(java.lang.String)
+2017-04-13 15:17:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByIdJson/{id}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.sarindy.productSubCategory.ProductSubCategory> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryById(int)
+2017-04-13 15:17:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-13 15:17:54 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-13 15:17:54 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 15:17:54 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 15:17:54 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 15:17:55 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-04-13 15:17:55 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-04-13 15:17:55 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:198 - Tomcat started on port(s): 8080 (http)
+2017-04-13 15:19:02 INFO  c.s.ProductApplication:48 - Starting ProductApplication on HQB100DIT15 with PID 10896 (E:\Documents\Java\NeonWorkspace\dnynn_product\target\classes started by Dy in E:\Documents\Java\NeonWorkspace\dnynn_product)
+2017-04-13 15:19:02 INFO  c.s.ProductApplication:637 - No active profile set, falling back to default profiles: default
+2017-04-13 15:19:02 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@357814: startup date [Thu Apr 13 15:19:02 ICT 2017]; root of context hierarchy
+2017-04-13 15:19:03 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$66635eec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-13 15:19:04 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-04-13 15:19:04 INFO  o.a.c.c.StandardService:179 - Starting service Tomcat
+2017-04-13 15:19:04 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-13 15:19:04 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-04-13 15:19:04 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 1735 ms
+2017-04-13 15:19:04 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-13 15:19:04 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-13 15:19:04 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-13 15:19:04 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-13 15:19:04 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-13 15:19:04 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-04-13 15:19:04 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-04-13 15:19:05 INFO  o.h.Version:37 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-04-13 15:19:05 INFO  o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2017-04-13 15:19:05 INFO  o.h.c.Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-04-13 15:19:05 INFO  o.h.a.c.Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-04-13 15:19:05 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-13 15:19:05 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-04-13 15:19:05 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-04-13 15:19:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@357814: startup date [Thu Apr 13 15:19:02 ICT 2017]; root of context hierarchy
+2017-04-13 15:19:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/deleteProduct],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.deleteProduct(com.sarindy.product.Product)
+2017-04-13 15:19:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/addProduct],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.addProduct(com.sarindy.product.Product)
+2017-04-13 15:19:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/updateProduct],methods=[POST],consumes=[application/json;charset=UTF-8]}" onto public void com.sarindy.product.ProductController.updateProduct(com.sarindy.product.Product)
+2017-04-13 15:19:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getAllProduct],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public java.util.List<com.sarindy.product.Product> com.sarindy.product.ProductController.getAllProduct()
+2017-04-13 15:19:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProduct],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public com.sarindy.product.Product com.sarindy.product.ProductController.getProduct(com.sarindy.product.Product)
+2017-04-13 15:19:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductByName],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public com.sarindy.product.Product com.sarindy.product.ProductController.getProductByName(com.sarindy.product.Product)
+2017-04-13 15:19:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductByNameLike],methods=[GET],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public java.util.List<com.sarindy.product.Product> com.sarindy.product.ProductController.getProductByNameLike(com.sarindy.product.Product)
+2017-04-13 15:19:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/addProductCategory],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.sarindy.productCategory.ProductCategoryController.addProductCategory()
+2017-04-13 15:19:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByNameLikeJson/{name}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.sarindy.productSubCategory.ProductSubCategory>> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryByNameLike(java.lang.String)
+2017-04-13 15:19:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByIdJson/{id}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.sarindy.productSubCategory.ProductSubCategory> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryById(int)
+2017-04-13 15:19:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getProductSubCategoryByNameJson/{name}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.sarindy.productSubCategory.ProductSubCategory> com.sarindy.productSubCategory.ProductSubCategoryController.getProductSubCategoryByName(java.lang.String)
+2017-04-13 15:19:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getAllProductSubCategory],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.sarindy.productSubCategory.ProductSubCategory>> com.sarindy.productSubCategory.ProductSubCategoryController.getAllProductSubCategory()
+2017-04-13 15:19:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-13 15:19:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-13 15:19:06 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 15:19:06 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 15:19:06 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-13 15:19:06 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-04-13 15:19:07 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-04-13 15:19:07 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:198 - Tomcat started on port(s): 8080 (http)
+2017-04-13 15:19:07 INFO  o.h.h.i.QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-13 15:19:07 INFO  c.s.s.SubProductPropertyDetailServiceImpl:54 - Sub Product Property Detail Added.
+2017-04-13 15:19:07 INFO  c.s.ProductApplication:57 - Started ProductApplication in 5.238 seconds (JVM running for 5.595)

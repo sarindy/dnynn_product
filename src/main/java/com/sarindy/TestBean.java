@@ -12,6 +12,7 @@ import com.sarindy.productCategory.ProductCategoryServiceImpl;
 import com.sarindy.productProperty.ProductPropertyServiceImpl;
 import com.sarindy.productPropertyDetail.ProductPropertyDetailServiceImpl;
 import com.sarindy.productSubCategory.ProductSubCategoryServiceImpl;
+import com.sarindy.subProductPropertyDetail.SubProductPropertyDetailServiceImpl;
 
 @Service
 public class TestBean {
@@ -29,6 +30,9 @@ public class TestBean {
 
 	@Autowired
 	private ProductPropertyDetailServiceImpl productPropertyDetailServiceImpl;
+	
+	@Autowired
+	private SubProductPropertyDetailServiceImpl subProductPropertyDetailServiceImpl;
 
 	public void addCategory(String name) {
 
@@ -85,17 +89,24 @@ public class TestBean {
 
 	}
 
-	public void addPropertyDetails(List<String> propertiesList, int modifiedBy, int SubCategoyId) {
+	public void addPropertyDetails(List<String> propertiesList, int modifiedBy, int propertyId) {
 
 		List<String> properties = new ArrayList<String>();
 		propertiesList.forEach(properties::add);
 		for (String elements : properties) {
-			productPropertyDetailServiceImpl.addProductPropertyDetailService(elements, modifiedBy, SubCategoyId);
+			productPropertyDetailServiceImpl.addProductPropertyDetailService(elements, modifiedBy, propertyId);
 		}
 	}
 	
 	public void updatePropertyDetail(){
 		productPropertyDetailServiceImpl.updateProductPropertyDetailService("Dust Proof", "DUst Proof", 1, 1);
 	}
+	
+	public void addSubProductPropertyDetail(String propertyDetailName, int modifiedBy,int propertyId){
+		subProductPropertyDetailServiceImpl.addSubProductPropertyDetailService(propertyDetailName, modifiedBy, propertyId);
+		
+	}
+	
+	
 
 }

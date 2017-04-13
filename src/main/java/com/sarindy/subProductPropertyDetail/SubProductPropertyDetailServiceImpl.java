@@ -19,12 +19,16 @@ public class SubProductPropertyDetailServiceImpl implements SubProductPropertyDe
 	@Autowired
 	private SubProductPropertyDetailRepository subProductPropertyDetailRepository;
 	
+	@Autowired
 	private ProductPropertyDetailServiceImpl productPropertyDetailServiceImpl;
 	
+	@Autowired
 	private SubProductPropertyDetail subProductPropertyDetailModel;
 	
+	@Autowired
 	private SubProductPropertyDetailHis subProductPropertyDetailHisModel;
 	
+	@Autowired
 	private SubProductPropertyDetailHisRepository subProductProprtyHisRepository;
 	
 
